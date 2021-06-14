@@ -1,0 +1,193 @@
+.settings {
+  .blacklist-settings {
+    .table-title {
+      margin: 1rem 0 1rem 0;
+    }
+    .holder-table {
+      .default-text {
+        width: 20% !important;
+      }
+    }
+    .holder-input {
+      margin-bottom: 15px;
+      .input-wrapper {
+        .ui.input {
+          input {
+            padding: 11px;
+          }
+        }
+      }
+      .block_user_title {
+        margin: 0px 0px 8px 0px;
+        font-size: 14px;
+      }
+      .ui.selection.dropdown {
+        padding: 11px;
+        margin-bottom: 15px;
+      }
+      button.ui.button.btn-blue.undefined {
+        padding: 8px 57px;
+        margin-right: 0 !important;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .settings {
+    .blacklist-settings {
+      .holder-input {
+        width: 71%;
+      }
+      .holder-table {
+        .common-table-wrapper {
+          overflow-x: scroll;
+        }
+      }
+    }
+    .countries-settings {
+      padding: 50px 0 20px 0px;
+      .toggle-group {
+        .toggle-wrapper {
+          .toggle-content {
+            p.call-description {
+              padding-right: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .callsettings-wrapper {
+    padding: 10px 0px 0px 0px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .settings {
+    .blacklist-settings {
+      .holder-input {
+        width: 60%;
+      }
+      .holder-table {
+        .common-table-wrapper {
+          overflow-x: scroll;
+        }
+      }
+    }
+    .callsettings-wrapper {
+      .toggle-group {
+        .toggle-wrapper {
+          width: 100%;
+          .toggle-content {
+            p {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+
+    .countries-settings {
+      .toggle-group {
+        .toggle-wrapper {
+          .toggle-content {
+            p.call-description {
+              padding-right: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .settings {
+    .callsettings-wrapper {
+      .toggle-group {
+        margin-bottom: 15px;
+      }
+      .call_algorithm_main {
+        margin-top: 45px;
+      }
+      .call-algorithm {
+        margin-bottom: 20px !important;
+      }
+    }
+    .call-schedules {
+      .holder-items {
+        .holder-text {
+          width: 100% !important;
+          margin-bottom: 15px;
+        }
+        .buffer_time {
+          margin-left: 20px !important;
+          margin-top: 5px !important;
+        }
+        .input-wrapper {
+          padding-top: 0 !important;
+          .input.input-gray input[type='text'] {
+            max-width: 60px !important;
+          }
+        }
+        .interval_time {
+          width: 84px !important;
+          flex-grow: initial !important;
+        }
+        .notice_time {
+          width: 61px !important;
+          flex-grow: initial !important;
+          margin-top: 2px;
+        }
+      }
+    }
+    .blacklist-settings {
+      p.subtext {
+        width: 90%;
+        margin: auto;
+        word-break: break-all;
+      }
+      h1.bold-text.page-title {
+        width: 90%;
+        margin: auto;
+      }
+      .holder-table {
+        .common-table-wrapper {
+          overflow-x: scroll;
+        }
+        .default-text {
+          width: 100% !important;
+        }
+      }
+      .holder-input {
+        max-width: 90%;
+        width: 100%;
+        margin: auto;
+      }
+    }
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .settings-container {
+    .dashboard-wrapper {
+      .tab-wrapper {
+        .blacklist-settings {
+          .holder-input {
+            width: 100% !important;
+            max-width: 100% !important;
+            min-width: 100% !important;
+          }
+        }
+      }
+    }
+  }
+  .call-bottom-wrapper .call-bottom-holder audio {
+    width: 100%;
+  }
+}
+.blacklist-settings {
+  .holder-input {
+    width: 100%;
+  }
+}

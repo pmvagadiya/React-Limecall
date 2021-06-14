@@ -1,0 +1,23 @@
+.groupbtn-holder {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 35px;
+  width: 892px;
+
+  .groupbtn-title {
+    margin-bottom: 0;
+
+    font-family: 'Gibson Regular';
+    font-size: 20px;
+    font-weight: 500;
+  }
+}
+
+.phone-number-wrapper .ui.input {
+  max-width: 220px;
+}
+
+.call-forwarding-wrapper button.ui.button {
+  background: #0071eb;
+  color: white;
+}

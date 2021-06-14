@@ -1,0 +1,198 @@
+.get-started-log-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  width: 100%;
+  height: 100vh;
+
+  background: $gray100;
+
+  .get-started-log-holder {
+    width: 1530px;
+    max-width: 100%;
+
+    background: white;
+
+    .title-login-holder {
+      border-bottom: 1px solid $gray300;
+
+      p {
+        padding: 20px 20px 9px 36px;
+
+        font-size: 23px;
+      }
+    }
+  }
+
+  .get-started-log-content {
+    display: flex;
+    padding-bottom: 67px;
+
+    .get-started-log-content-description-holder {
+      flex-basis: 50%;
+      padding: 175px 100px 10px 130px;
+
+      .get-started-log-name {
+        margin-bottom: 32px;
+
+        font-size: 25px;
+      }
+
+      .get-started-log-content-description {
+        font-size: 23px;
+        font-weight: 300;
+        color: $gray300;
+      }
+    }
+  }
+
+  .register-decription-holder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: 50%;
+    padding: 93px 96px 13px 144px;
+
+    background: $white;
+
+    .register-title {
+      margin-bottom: 42px;
+
+      font-family: $gibson;
+      font-size: 30px;
+      font-weight: 600;
+    }
+
+    .italic-text {
+      padding-right: 0;
+      margin-bottom: 33px;
+
+      font-size: 19px;
+      font-weight: 400;
+      line-height: 34px;
+    }
+
+    .sales-director-holder {
+      display: flex;
+    }
+
+    .director-position-holder {
+      display: flex;
+      align-items: center;
+    }
+
+    .direction-position {
+      display: flex;
+      align-items: center;
+
+      &:after {
+        content: "|";
+
+        margin: 0 5px;
+
+        font-weight: 600;
+        color: $gray300;
+      }
+    }
+
+    .director-name {
+      margin: 0;
+
+      font-family: dolce, sans-serif;
+      font-size: 35px;
+      font-style: normal;
+      font-weight: 400;
+    }
+  }
+
+  .footer-log-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 38px 20px;
+
+    border-top: 1px solid $gray300;
+
+    p {
+      margin-top: 16px;
+      margin-bottom: 0;
+
+      font-size: 21px;
+      font-weight: 500;
+      color: $gray300;
+
+      span {
+        color: $link-color;
+
+        border-bottom: 2px solid $link-color;
+      }
+    }
+
+    .footer-btn {
+      .ui.button.btn-blue {
+        padding: 15px 24px;
+
+        font-size: 18px;
+
+        border-radius: 5px;
+      }
+
+      .ui.button.btn-white {
+        padding: 15px 38px;
+        margin-right: 17px;
+
+        font-size: 18px;
+        color: $gray300;
+
+        border-radius: 5px;
+
+        &:hover {
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1440px) {
+  .get-started-log-wrapper {
+    .footer-log-wrapper {
+      p {
+        font-size: 18px;
+      }
+
+      .footer-btn {
+        .ui.button.btn-white, .ui.button.btn-blue {
+          font-size: 16px;
+        }
+      }
+    }
+
+    .get-started-log-content {
+      .get-started-log-content-description-holder {
+        padding: 171px 50px 10px 50px;
+
+        .get-started-log-name {
+          font-size: 20px;
+        }
+
+        .get-started-log-content-description {
+          font-size: 19px;
+        }
+      }
+    }
+
+    .register-decription-holder {
+      padding: 93px 50px 13px 50px;
+
+      .register-title {
+        font-size: 25px;
+      }
+
+      .italic-text {
+        font-size: 16px;
+      }
+    }
+  }
+}

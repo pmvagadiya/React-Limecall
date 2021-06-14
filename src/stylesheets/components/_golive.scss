@@ -1,0 +1,79 @@
+.golive {
+  background-color: $white;
+
+  img {
+    margin-bottom: 3px;
+  }
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 139px 0;
+  }
+
+  &-title {
+    margin-bottom: 22px;
+
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  &-subtitle {
+    margin-bottom: 26px;
+
+    font-size: 20px;
+  }
+
+  &-desc {
+    margin-bottom: 33px;
+
+    font-size: 15px;
+    color: $gray300;
+  }
+
+  &-btn-holder {
+    margin-bottom: 48px;
+
+    button {
+      &:first-of-type {
+        margin-right: 10px;
+        width: 308px;
+      }
+
+      &:last-of-type {
+        width: 176px;
+      }
+    }
+  }
+
+  .ui.button.btn-blue, .ui.button.btn-alt-blue {
+    padding: 0;
+    height: 50px;
+
+    text-transform: uppercase;
+
+    border-radius: 5px;
+  }
+
+  &-anchor {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 775px) {
+  .golive{
+    .golive-content{
+      padding: 50px 15px;
+      .golive-btn-holder{
+        button{
+          width: 100% !important;
+          margin: 7px 0px !important;
+        }
+        button:nth-child(2){
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}

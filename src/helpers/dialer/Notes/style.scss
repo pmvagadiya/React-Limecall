@@ -1,0 +1,49 @@
+// .tags-draggable-container-main{
+//     width: 220px;
+//     right: calc(-70vw + 50%);
+//     top: 0px;
+// }
+
+
+.tags-container-main{
+
+    .tags-container{
+        padding: 7px 0px 7px 10px;
+        max-height: 150px;
+        overflow: auto;
+
+        .notes-item-list{
+            position: relative;
+            margin: 0 0 7px;
+            font-size: 10px;
+            padding-right: 7px;
+            color: #A4ABC4;
+            text-align: left;
+
+            .edit-button-text{
+                position: absolute;
+                top: 0;
+                right: 0;
+                cursor: pointer;
+                display: inline-block;
+            }
+            .notes-date-container{
+                text-align: left;
+            }
+            .note-text-main{
+                font-size: 12px;
+                color: #fff;
+                margin: 7px 0;
+                line-height: 16px;
+                padding-bottom: 20px;
+                // border-bottom: 1px solid #A4ABC4;
+            }
+
+
+
+
+
+        }
+    }
+    
+}

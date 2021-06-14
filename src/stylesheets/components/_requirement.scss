@@ -1,0 +1,168 @@
+.requirement {
+  background-color: $white;
+  display: flex;
+  flex-direction: column;
+  .quicksetup-header {
+    text-align: center;
+    font-family: "Gibson Regular";
+    font-size: 24px;
+    font-weight: 600;
+  }
+  .requirement-content {
+    width: 100%;
+    .requirement-checkbox {
+      text-align: center;
+      .container {
+        .checkmark {
+          left: 200px;
+        }
+      }
+    }
+  }
+  &-checkbox {
+    padding: 37px 25px 32px;
+
+    border-bottom: 1px solid $gray100;
+  }
+
+  .title {
+    margin-bottom: 6px;
+
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  .desc {
+    font-size: 19px;
+  }
+
+  /* Customize the label (the container) */
+  .container {
+    position: relative;
+
+    display: block;
+    padding-left: 66px;
+    margin: 21px 0;
+
+    font-size: 22px;
+
+    cursor: pointer;
+  }
+
+  /* Hide the browser's default checkbox */
+  .container input {
+    position: absolute;
+
+    width: 0;
+    height: 0;
+
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 50%;
+    left: 0;
+
+    width: 25px;
+    height: 25px;
+
+    border: 1px solid $gray150;
+    border-radius: 100%;
+
+    transition: all 0.2s ease-in-out;
+    transform: translateY(-50%);
+  }
+
+  /* When the checkbox is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: $link-color;
+    border-color: $link-color;
+  }
+
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: '';
+
+    position: absolute;
+
+    display: none;
+  }
+
+  /* Show the checkmark when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+
+  /* Style the checkmark/indicator */
+  .container .checkmark:after {
+    top: 5px;
+    left: 9px;
+
+    width: 5px;
+    height: 10px;
+  }
+}
+@media (max-width: 775px) {
+  .requirement {
+    p {
+      font-size: 14px !important;
+    }
+    button {
+      font-size: 14px !important;
+    }
+    .quicksetup-header {
+      font-family: 'Gibson Regular';
+      font-weight: 600;
+      font-size: 14px;
+    }
+    .quicksetup-footer {
+      .ui.button {
+        margin-right: 0px !important;
+      }
+    }
+    .requirement-content {
+      .requirement-checkbox {
+        .container {
+          padding-left: 0;
+          .title {
+            font-size: 16px;
+          }
+          .desc {
+            font-size: 14px;
+          }
+          .checkmark {
+            left: -8px;
+            top: 47%;
+          }
+        }
+      }
+    }
+  }
+}
+@include respond-to(md) {
+  .requirement {
+    .requirement-content {
+      .requirement-checkbox {
+        label {
+          padding-left: 0px;
+        }
+        .checkmark{
+          left: 130px !important;
+        }
+      }
+    }
+    .quicksetup-header {
+      font-family: 'Gibson Regular';
+      font-weight: 600;
+      font-size: 14px;
+    }
+    .quicksetup-footer {
+      .ui.button {
+        margin-right: 0px !important;
+      }
+    }
+  }
+}

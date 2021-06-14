@@ -1,0 +1,112 @@
+{
+  "messages": [
+    {
+      "isChecked": false,
+      "id": "#123456",
+      "time": "03/04, 18:36",
+      "contact": "+01-0987654321",
+      "email": "alfa@beta.com",
+      "source": "Webpage",
+      "location": "London, Uk",
+      "status": "Online",
+      "agent": "Agent 1",
+      "score": "2",
+      "tag": []
+    },
+    {
+      "isChecked": false,
+      "id": "#234567",
+      "time": "03/04, 18:36",
+      "contact": "+71-0976785656",
+      "email": "alfa@beta.com",
+      "source": "Facebook",
+      "location": "Banglore, India",
+      "status": "Online",
+      "agent": "Agent 1",
+      "score": "1",
+      "tag": ["Meeting Scheduled"]
+    },
+    {
+      "isChecked": false,
+      "id": "#345678",
+      "time": "03/04, 18:36",
+      "contact": "+41-0878645677",
+      "email": "alfa@beta.com",
+      "source": "Webpage",
+      "location": "Cairo, Ejypt",
+      "status": "Offline",
+      "agent": "Agent 1",
+      "score": "1",
+      "tag": ["Opportunity"]
+    },
+    {
+      "isChecked": false,
+      "id": "#456789",
+      "time": "03/04, 18:36",
+      "contact": "+41-0878645677",
+      "email": "alfa@beta.com",
+      "source": "Webpage",
+      "location": "Cairo, Ejypt",
+      "status": "Online",
+      "agent": "Agent 1",
+      "score": "1",
+      "tag": ["Opportunity"]
+    },
+    {
+      "isChecked": false,
+      "id": "#567890",
+      "time": "03/04, 18:36",
+      "contact": "+01-0987654321",
+      "email": "alfa@beta.com",
+      "source": "Webpage",
+      "location": "London, Uk",
+      "status": "Online",
+      "agent": "Agent 1",
+      "score": "2",
+      "tag": ["Existing Customer"]
+    }
+  ],
+  "call": [
+    {
+      "isChecked": false,
+      "id": "#123456",
+      "time": "03/04, 18:36",
+      "contact": "+01-0987654321",
+      "email": "alfa@beta.com",
+      "source": "Webpage",
+      "location": "London, Uk",
+      "status": "Online",
+      "agent": "Agent 1",
+      "score": "2",
+      "tag": ["Existing Customer"]
+    },
+    {
+      "isChecked": false,
+      "id": "#987654",
+      "time": "03/04, 18:36",
+      "contact": "+01-0987654321",
+      "email": "alfa@beta.com",
+      "source": "Webpage",
+      "location": "London, Uk",
+      "status": "Online",
+      "agent": "Agent 1",
+      "score": "2",
+      "tag": ["Existing Customer"]
+    }
+  ],
+  "schedules": [
+    {
+      "isChecked": false,
+      "id": "#445325",
+      "time": "03/04, 18:36",
+      "contact": "+01-0987654321",
+      "email": "alfa@beta.com",
+      "source": "Webpage",
+      "location": "London, Uk",
+      "status": "Online",
+      "agent": "Agent 1",
+      "score": "2",
+      "tag": ["Existing Customer"]
+    }
+  ]
+}

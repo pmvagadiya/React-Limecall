@@ -1,0 +1,1004 @@
+.plan {
+  &.active {
+    .plan-status {
+      background-color: $link-color;
+    }
+    
+  }
+  
+
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 39px;
+
+    .upgrade-title {
+      width: 100%;
+    }
+  }
+
+  &-item {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 44px;
+    min-width: 227px;
+
+    border: 1px solid $gray100;
+    .plan-status.plan-selected {
+      color: $white;
+  
+      background: $link-color;
+    }
+    cursor: pointer;
+
+    .event-handler {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      z-index: 1;
+
+      height: 100%;
+    }
+
+    &:not(:last-of-type) {
+      margin-right: 28px;
+    }
+
+    &.advance-item {
+      padding-top: 36px;
+      width: 320px;
+      max-width: 100%;
+
+      .advance-icon {
+        margin-bottom: 5px;
+        width: 190px !important;
+      }
+
+      .plan-title {
+        margin-bottom: 9px;
+
+        font-size: 30px;
+        letter-spacing: 2px;
+      }
+
+      .plan-subdesc {
+        font-size: 13px;
+        text-transform: initial;
+      }
+    }
+  }
+
+  &-title {
+    margin-bottom: 3px;
+
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  &-price {
+    margin-bottom: 7px;
+
+    font-size: 38px;
+  }
+
+  &-desc {
+    margin-bottom: 6px;
+
+    font-size: 9.9px;
+    text-transform: uppercase;
+  }
+
+  &-subdesc {
+    margin-bottom: 34px;
+
+    font-size: 11.3px;
+    font-weight: 200;
+    color: $link-color;
+    text-transform: uppercase;
+  }
+
+  &-status {
+    position: absolute;
+    bottom: 0;
+
+    display: flex;
+    justify-content: center;
+    padding: 9px 0;
+    width: 100%;
+
+    font-size: 21px;
+
+    background-color: $gray100;
+
+    &.selected {
+      color: $white;
+
+      background-color: $link-color;
+    }
+  }
+}
+
+.ui.page.modals.dimmer.transition.visible.active{
+  .common-add-card-modal{
+    .header{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .content{
+      .holder-card-number{
+        .error-message-cardNumber{
+          display: flex;
+        justify-content: flex-end;
+        font-size: 10px;
+        color: red;
+        margin-top: -19px;
+        }
+      }
+      .error-message-cvv {
+        display: flex;
+        justify-content: flex-end;
+        font-size: 10px;
+        color: red;
+      }
+      .error-message-cardName{
+        display: flex;
+        justify-content: flex-end;
+        font-size: 10px;
+        color: red;
+        margin-top: -19px;
+      }
+      p{
+        text-align: center;
+        font-size: 16px;
+        font-weight: bold;
+      }
+      .input-wrapper{
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+        margin: 18px 0;
+        .input-error {
+          .error_msg {
+            color: red;
+            font-size: 10px;
+          }
+        }
+      }
+      .holder-date{
+        .hold-expiry-date{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+        .input-holder{
+          display: flex;
+          justify-content: flex-end;
+          min-width: 85%;
+          .ui.input {
+            margin: 0 10px;
+            width: 15%;
+          }
+        }
+      }
+      .span-text-holder{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        span{
+          display: flex;
+          img{
+            padding-right: 10px;
+          }
+        }
+      }
+      .holder-images{
+        position: absolute;
+        bottom: 57%;
+        right: 23px;
+        display: flex;
+      }
+      .input-error{
+        width: 50%;
+      }
+    }
+  }
+}
+.subscription-modal {
+  .ui.small.image {
+    margin-bottom: 10px;
+    width: 60px;
+  }
+
+  .fa.fa-times {
+    &:hover {
+      color: #000000;
+
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+    }
+  }
+
+  &.ui.modal {
+    width: 1620px;
+    max-width: 85%;
+
+    background: transparent;
+
+    > .header:not(.ui) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 17px 42px;
+
+      font-size: 20.4px;
+      font-weight: 600;
+      color: $white;
+
+      background-color: $dark-blue;
+      border-top-right-radius: 10px;
+      border-top-left-radius: 10px;
+    }
+
+    > .content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 37px 42px;
+    }
+  }
+
+  .modal-header {
+    margin: 0;
+  }
+
+  .fa-times {
+    cursor: pointer;
+  }
+
+  .plans {
+    width: 73.6%;
+  }
+
+  .plans-included {
+    margin-bottom: 44px;
+
+    .title {
+      margin-bottom: 27px;
+
+      font-size: 25.8px;
+    }
+
+    .plans-icon {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0;
+
+      list-style: none;
+    }
+
+    .icon {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      width: 16.66%;
+
+      font-size: 12.3px;
+    }
+
+    .ui.small.image {
+      margin-right: 16px;
+      margin-bottom: 0;
+      width: 23px;
+    }
+  }
+
+  .add-credits {
+    .title {
+      margin-bottom: 14px;
+
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    .credits {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      padding: 24px 47px 24px 22px;
+      width: 96.8%;
+
+      background-color: $gray100;
+
+      .ui.input {
+        width: 150px;
+
+        > input {
+          padding: 9px 28px;
+
+          font-size: 30px;
+
+          border: 0;
+        }
+      }
+    }
+
+    .credits-title {
+      position: relative;
+
+      padding-left: 22px;
+      margin-bottom: 5px;
+
+      font-size: 22.5px;
+
+      &:before {
+        content: "";
+
+        position: absolute;
+        top: 50%;
+        left: 0;
+
+        width: 10px;
+        height: 10px;
+
+        background-color: $black;
+        border-radius: 100%;
+
+        transform: translateY(-50%);
+      }
+    }
+
+    .credits-subtitle {
+      padding-left: 24px;
+
+      font-size: 13.4px;
+    }
+  }
+
+  .holder-small-content {
+    width: 24.3%;
+    // height: 690px;
+    // overflow: hidden;
+
+    &::-webkit-scrollbar {
+      width: 0;
+      height: 0;
+    }
+  }
+
+  .summary {
+    &-title {
+      margin-bottom: 48px;
+
+      font-size: 20.1px;
+      font-weight: 600;
+    }
+
+    &-tab-holder {
+      display: flex;
+      margin-bottom: 30px;
+    }
+
+    // &-tab {
+    //   padding: 10px 0;
+    //   width: 50%;
+
+    //   font-size: 16px;
+    //   text-align: center;
+    //   text-transform: uppercase;
+
+    //   border: 1px solid $gray100;
+
+    //   cursor: pointer;
+
+    //   &:last-of-type {
+    //     border-left: 0;
+    //   }
+
+    //   &.active {
+    //     background-color: $gray100;
+    //   }
+    // }
+
+    .summary-toggle {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 0;
+      width: 100%;
+
+      .button {
+        border-radius: 0;
+      }
+
+      .activeBtn {
+        background: $green;
+        color: $white;
+        // border: 1px solid $green;
+      }
+    }
+
+    &-plan {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      &:nth-of-type(2) {
+        margin-bottom: 16px;
+
+        .center-line {
+          width: 70%;
+        }
+      }
+
+      &:nth-of-type(3) {
+        margin-bottom: 40px;
+
+        .center-line {
+          width: 78%;
+        }
+      }
+
+      &:nth-of-type(5) {
+        margin-bottom: 37px;
+
+        .center-line {
+          width: 58%;
+        }
+      }
+    }
+
+    .light-text {
+      margin: 0;
+
+      font-size: 16px;
+      color: $gray300;
+    }
+
+    .center-line {
+      position: relative;
+
+      &:before {
+        content: "";
+
+        position: absolute;
+        bottom: 5px;
+        left: 0;
+
+        width: 100%;
+        height: 1px;
+
+        background-color: $gray100;
+      }
+    }
+
+    .gray-text {
+      margin: 0;
+
+      font-size: 16px;
+    }
+
+    &-code-text {
+      position: relative;
+
+      padding-left: 26px;
+      margin-bottom: 4px;
+      width: 100%;
+
+      font-size: 12px;
+      color: $gray300;
+
+      i {
+        position: absolute;
+        top: 50%;
+        left: 6px;
+
+        color: $link-color;
+
+        transform: translateY(-50%);
+      }
+    }
+
+    &-code {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 61px;
+
+      .input-wrapper {
+        width: 64.9%;
+      }
+
+      .ui.input {
+        width: 100%;
+
+        > input {
+          width: 100%;
+
+          border-color: $link-color;
+          border-radius: 0;
+        }
+      }
+
+      .btn-blue {
+        width: 34%;
+
+        font-size: 15px;
+        text-transform: uppercase;
+      }
+    }
+
+    &-plan-title {
+      width: 100%;
+
+      font-size: 18px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    &-due {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 69px;
+    }
+    &-drop {
+      margin-bottom: 42px;
+      .payment-drop-down {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .summary-due-price {
+          min-width: 34%;
+
+        }
+        .summary-due-price.show-card{
+          .cardDetails {
+            display: flex;
+            justify-content: flex-end;
+          }
+        }
+      }
+      .add-card {
+        color: #1071eb;
+        font-size: 10px;
+        cursor: pointer;
+      }
+    }
+
+
+    &-due-text {
+      margin: 0;
+
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    &-due-price {
+      font-size: 18.7px;
+      font-weight: 600;
+    }
+
+    .holder-credit-card,
+    .holder-paypal {
+      .ui.button {
+        margin-bottom: 12px;
+        width: 100%;
+
+        font-size: 17px;
+      }
+    }
+
+    .holder-credit-card {
+      .ui.button {
+        padding: 19px 0;
+      }
+    }
+
+    .holder-paypal {
+      .ui.button {
+        padding: 25px 0;
+        margin-bottom: 4px;
+
+        background-image: url(../assets/images/paypal.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 85px;
+
+        transition: all 0.3s ease-in-out;
+
+        @include on-event {
+          background-image: url(../assets/images/paypal_hover.svg);
+        }
+      }
+    }
+  }
+
+  .saved-cards {
+    .ui.table thead th {
+      font-size: 16px;
+      font-weight: 600;
+    }
+    .saved-cards-title {
+      margin-bottom: 7px;
+
+      font-size: 20px;
+      text-align: center;
+    }
+
+    .holder-swiper {
+      margin-bottom: 42px;
+    }
+
+    .swiper-wrapper {
+      align-items: center;
+    }
+
+    .swiper-button-disabled {
+      display: none;
+    }
+
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      top: 56%;
+
+      width: 20px;
+      height: 20px;
+
+      background-size: 15px 20px;
+
+      opacity: 0.2;
+      filter: contrast(0);
+    }
+
+    .swiper-button-next {
+      right: 0;
+    }
+
+    .card-info {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .input-wrapper{
+        .input-error{
+          span{
+            color: red;
+            font-size: 10px;
+          }
+        }
+      }
+      .ui.button.btn-blue {
+        width: 100%;
+        margin-right: 0px;
+      }
+    }
+
+    .applyNowToggleContainer {
+      display: flex;
+      align-items: center;
+      margin-top: 11px;
+      .togggle__btn{
+        label{
+          margin-bottom: 0px;
+        }
+      }
+      p {
+        font-size: 20px;
+        margin-left: 14px;
+      }
+    }
+
+    .changeSubscription {
+      button{
+      width: 100%;
+      margin-top: 10px;
+      margin-right: 100%;
+      }
+    }
+
+    .card-title {
+      margin-bottom: 34px;
+      width: 100%;
+
+      font-size: 20px;
+      text-align: center;
+    }
+
+    .input-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      margin-bottom: 24px;
+      width: 100%;
+
+      &:nth-of-type(4) {
+        width: 29%;
+      }
+    }
+
+    .holder-card-number {
+      position: relative;
+
+      width: 100%;
+
+      .ui.input > input {
+        padding: 7px 100px 7px 10px;
+      }
+
+      .holder-images {
+        position: absolute;
+        top: 29px;
+        right: 5px;
+
+        display: flex;
+
+        img {
+          margin-right: 5px;
+        }
+      }
+    }
+
+    .default-text {
+      margin-bottom: 3px;
+      margin-left: 5px;
+
+      font-size: 14px;
+    }
+
+    .ui.input > input {
+      padding: 7px 10px;
+      width: 100%;
+    }
+
+    .holder-date {
+      display: flex;
+      width: 59%;
+
+      .input-wrapper {
+        &:first-of-type {
+          margin-right: 2px;
+        }
+      }
+    }
+
+    .secure-text,
+    .commercial-text {
+      position: relative;
+
+      display: flex;
+      align-items: center;
+      padding-left: 23px;
+      margin-bottom: 48px;
+
+      font-size: 10px;
+      color: $gray300;
+
+      img {
+        position: absolute;
+        top: 50%;
+        left: 0;
+
+        width: 15px;
+
+        transform: translateY(-50%);
+      }
+    }
+
+    .ui.button.btn-green {
+      padding: 15px 0;
+      margin-bottom: 5px;
+      width: 100%;
+    }
+  }
+}
+
+.ui.dimmer {
+  z-index: 2;
+
+  padding: 51px 100px;
+
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.plan-item:hover {
+  .plan-status {
+    color: $white;
+
+    background: $link-color;
+    // border: 1px solid $green;
+  }
+}
+
+.ui.modal .scrolling.content {
+  max-height: calc(79vh);
+}
+
+@media only screen and (min-width: 1200px) {
+  .plan-item,
+  .plan-item.advance-item {
+    // margin-bottom: 20px;
+    // width: 300px;
+    flex: auto;
+  }
+
+  .subscription-modal {
+    .summary-code .input-wrapper {
+      width: 60%;
+    }
+
+    .summary-plan:nth-of-type(5) .center-line {
+      width: 30%;
+    }
+
+    .summary-plan:nth-of-type(3) .center-line {
+      width: 65%;
+    }
+
+    .plans-included .icon {
+      width: 25%;
+    }
+
+    .summary-code .btn-blue {
+      padding: 8px 0;
+      margin-right: 0;
+      width: 37%;
+    }
+  }
+}
+
+@media (max-width: 1200px){
+  .subscription-modal{
+    .scrolling.content{
+      .plans{
+        width: 100%;
+      }
+      .holder-small-content{
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1440px) and (min-width: 1200px) {
+  .plan-list {
+    justify-content: space-between;
+  }
+
+  .plan-item {
+    width: 24%;
+    min-width: initial;
+
+    &:not(:last-of-type) {
+      margin: 0;
+    }
+
+    .ui.small.image {
+      width: 100px;
+    }
+  }
+
+  .plan-item.advance-item {
+    margin-bottom: 0;
+    width: 24%;
+
+    .plan-title {
+      font-size: 26px;
+    }
+  }
+
+  .plan-price {
+    font-size: 30px;
+  }
+
+  .plan-subdesc {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .plan-status {
+    font-size: 16px;
+
+    transition: all 0.2s ease-in-out;
+  }
+
+  .ui.modal .scrolling.content {
+    max-height: calc(72vh);
+  }
+
+  .subscription-modal {
+    &.ui.modal > .header:not(.ui) {
+      font-size: 16px;
+    }
+
+    .plan-item {
+      width: 33%;
+    }
+
+    .plans {
+      width: 59%;
+    }
+
+    .holder-small-content {
+      width: 39%;
+    }
+
+    .summary {
+      .light-text,
+      .gray-text {
+        font-size: 14px;
+      }
+
+      .holder-credit-card .ui.button {
+        font-size: 16px;
+      }
+
+      .holder-paypal .ui.button {
+        background-size: 70px;
+      }
+    }
+
+    .summary-title {
+      font-size: 16px;
+    }
+
+    .summary-tab {
+      font-size: 14px;
+    }
+
+    .summary-plan-title {
+      font-size: 16px;
+    }
+
+    .summary-due-text,
+    .summary-due-price {
+      font-size: 16px;
+    }
+
+    .holder-small-content {
+      // height: 665px;
+    }
+
+    .plans-included {
+      .title {
+        font-size: 21px;
+      }
+
+      .icon {
+        font-size: 11px;
+      }
+
+      .ui.small.image {
+        margin-right: 7px;
+      }
+    }
+
+    .add-credits {
+      .title {
+        font-size: 16px;
+      }
+
+      .credits-title {
+        font-size: 18px;
+      }
+
+      .credits-subtitle {
+        font-size: 11px;
+      }
+
+      .credits .ui.input > input {
+        font-size: 24px;
+      }
+    }
+  }
+}

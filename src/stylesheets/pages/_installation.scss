@@ -1,0 +1,438 @@
+.installation-wrapper {
+  padding: 50px 0;
+  .installation-content {
+    display: flex;
+    align-items: center;
+    border: 1px solid #f4f4f4;
+    background-color: #f2f2f2;
+    margin-top: 5px;
+
+    > div {
+      padding: 15px;
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+
+    .call-textarea {
+      margin-bottom: 20px;
+    }
+
+    .installation-footer {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    img {
+      margin-right: 15px;
+    }
+    form {
+      i {
+        position: absolute;
+        right: 6px;
+        top: 5px;
+      }
+    }
+  }
+}
+
+.dzu-previewImage {
+  width: auto;
+  /* max-height: 40px; */
+  max-width: 76%;
+  border-radius: 4px;
+}
+
+.link-Sharing {
+  padding: 50px 0;
+  .share-your-link.change-personal {
+    .accordion.ui {
+      .content.active {
+        form {
+          .save-cancel {
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+.share-your-link-wrapper {
+  padding: 26px 32px;
+
+  .share-your-link:first-child {
+    margin-bottom: 50px;
+  }
+
+  .personal-info-wrapper {
+    .accordion.ui {
+      .content {
+        form {
+          .input-wrapper {
+            flex-direction: column;
+            margin-bottom: 30px;
+            width: 45%;
+            max-width: 100%;
+          }
+        }
+        .dropZone {
+          display: flex;
+          align-items: center;
+          .dzu-dropzone {
+            width: 40%;
+            margin: 0px;
+            // overflow: hidden;
+          }
+          .dropZone-content {
+            padding: 0 30px;
+          }
+        }
+      }
+    }
+  }
+  .change-personal {
+    .content.active .holder-change-personal {
+      .ui.label.label {
+        padding: 20px;
+        align-self: center;
+      }
+      input {
+        padding: 17px;
+      }
+    }
+  }
+  .share-your-link {
+    .text-wrapper {
+      margin-bottom: 10px;
+    }
+    display: flex;
+    justify-content: space-between;
+    // max-width: 900px;
+    padding: 30px;
+    //background-color: #f4f4f4;
+    // margin-top: 20px;
+    // align-items: center;
+    flex-direction: column;
+    // box-shadow: 5px 3px 25px 10px #f5f5f5;
+    border: 1px solid #f4f4f4;
+
+    .connect-block {
+      display: flex;
+      align-items: center;
+      span {
+        margin-right: 50px;
+      }
+    }
+
+    .disconnect-block {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .text-wrapper {
+          display: flex;
+        }
+    }
+
+    .configuration {
+      padding: 24px;
+      background: #ffffff;
+      border: 1px solid #dadada;
+      border-radius: 6px;
+      box-shadow: 0 1px 5px #004a7426;
+      margin-top: 20px;
+
+      h2 {
+        font-size: 20px;
+      }
+
+      .config-content:last-child {
+        border-top: 1px solid #dadada;
+      }
+
+      .config-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 0px;
+        
+
+        .config-left {
+          display: flex;
+          align-items: center;
+          width: 100%;
+
+          img {
+            width: 25px;
+            margin-right: 30px;
+          }
+
+          .check-conflicts {
+            margin-top: 45px;
+
+            b {
+              margin-top: 20px;
+              color: #4d5055;
+              font-size: 16px;
+            }
+             p {
+               color: #b3b3b3;
+             }
+          }
+        }
+      }
+
+      .config-right {
+        width: 100%;
+        display: flex;
+        margin-bottom: 24px;
+        padding: 12px;
+        line-height: 20px;
+        text-align: left;
+        border: 1px solid #dadada;
+        border-radius: 6px;
+
+        .google-logo {
+          margin-right: 10px;
+          width: 20px;
+          height: 20px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50%;
+          background-color: #ffffff;
+          box-shadow: 0 2px 5px 0 #00000045;
+
+          img {
+            width: 10px;
+          }
+        }
+        
+        .check-email {
+          
+          span {
+            color: #b3b3b3;
+          }
+        }
+      }
+    }
+
+    .subtext {
+      margin: 0px;
+      font-family: 'Gibson Regular';
+      color: rgb(179, 179, 179);
+    }
+
+    .google-logo {
+      margin-right: 30px;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background-color: #ffffff;
+      box-shadow: 0 2px 5px 0 #00000045;
+    }
+
+    .google-email {
+      display: flex;
+      flex-direction: column;
+
+      span:first-child {
+        color: #b3b3b3;
+        font-size: 16px;
+      }
+      span:last-child {
+        font-size: 20px;
+      }
+    }
+    
+    .google-logo img {
+      width: 28px;
+    }
+    .zoom-logo img {
+      width: 16px;
+      margin-right: 6px;
+      color: #0e69dc;
+    }
+    .link-text {
+      color: #0e69dc;
+    }
+    .zoom-button {
+      margin-left: 0px !important;
+    }
+    .drop-down {
+      .ui.dropdown {
+        border: 1px solid #e0e1e2;
+        .divider.text {
+          padding: 7px 26px;
+        }
+        .dropdown.icon::before {
+          margin: 12px;
+        }
+      }
+      button {
+        margin-left: 21px;
+      }
+    }
+  }
+}
+
+.web-hooks-wrapper {
+  padding: 50px 0;
+  .ui.table thead th {
+    font-size: 16px;
+    font-weight: 600;
+  }
+}
+
+.webhook-modal {
+  width: 470px !important;
+  max-width: 100%;
+
+  .modal-content {
+    h3 {
+      font-size: 22px;
+    }
+
+    .ui.input {
+      width: 100%;
+    }
+
+    .input-wrapper {
+      margin-bottom: 15px;
+
+      .input-title {
+        display: block;
+      }
+    }
+
+    .footer {
+      margin-top: 20px;
+      text-align: right;
+      button:nth-child(2) {
+        margin-right: 0px !important;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .settings {
+    .installation_main {
+      .intallation_code {
+        .installation-footer {
+          button {
+            padding: 10px 10px;
+          }
+        }
+      }
+    }
+  }
+  .devloper_email_id {
+    margin: 0 !important;
+    width: 90% !important;
+    left: 50% !important;
+    transform: translateX(-47%) !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .settings {
+    .installation_main {
+      .intallation_code {
+        .installation-footer {
+          button {
+            padding: 10px 6px;
+          }
+        }
+      }
+    }
+  }
+  .devloper_email_id {
+    margin: 0 !important;
+    width: 70% !important;
+    left: 50% !important;
+    transform: translateX(-47%) !important;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .settings {
+    .share_your_link_fixed {
+      padding: 10px 5px;
+      .share-your-link {
+        a.link-holder {
+          word-break: break-all;
+        }
+      }
+    }
+    .installation_main {
+      .installation-content.intallation_code {
+        .intallation_deatil {
+          button.ui.button.btn-blue {
+            padding: 10px 11px;
+            margin-right: 0 !important;
+            font-size: 12px !important;
+          }
+        }
+      }
+      .intallation_code {
+        .installation-footer {
+          button {
+            padding: 10px 6px;
+            margin-right: 10px !important;
+            font-size: 12px !important;
+          }
+        }
+      }
+    }
+  }
+  .devloper_email_id {
+    margin: 0 !important;
+    width: 80% !important;
+    left: 50% !important;
+    transform: translateX(-47%) !important;
+  }
+}
+@media (min-width: 485px) and (max-width: 767px) {
+  .settings {
+    .integrations {
+      .share-your-link .drop-down button.ui.button {
+        margin-left: 12px !important;
+        margin-right: 0 !important;
+      }
+    }
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .settings {
+    .integrations {
+      padding: 55px 0px 25px 0px;
+      .share-your-link {
+        padding: 20px;
+      }
+      .drop-down .ui.dropdown .divider.text {
+        padding: 7px 19px !important;
+      }
+      .share-your-link .drop-down .ui.dropdown {
+        margin-bottom: 15px;
+      }
+      .share-your-link .drop-down button {
+        margin-left: 0 !important;
+      }
+    }
+  }
+}
+.installation_main {
+  .installation-content.intallation_code {
+    .intallation_deatil {
+      .share-your-link {
+        margin-top: 20px !important;
+      }
+    }
+  }
+}
+
+.subtextLink{
+  color: #b3b3b3 !important;
+}

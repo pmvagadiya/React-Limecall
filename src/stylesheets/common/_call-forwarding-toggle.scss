@@ -1,0 +1,261 @@
+.toogle-forwading-wrapper {
+  position: relative;
+
+  display: flex;
+  //justify-content: space-between;
+  margin-bottom: 20px;
+  .toggle-enable-holder {
+    .forwarding-button-holder {
+      height: 46px;
+    }
+  }
+
+  @media only screen and (min-width: 200px) and (max-width: 483px) {
+
+    .input-select-wrapper.input-wrapper {
+      display: block !important;
+      button {
+        margin-top: 30px !important;
+        margin-left: 4px !important;
+        text-transform: capitalize !important;
+      }
+      .react-tel-input{
+        input{
+          display: flex;
+          align-items: center;
+          width: 300px !important;
+          height: 46px;
+          border: 1px solid #cacaca;
+          border-radius: 5px;
+        }
+      }
+    }
+
+  }
+
+  .input-select-wrapper.input-wrapper {
+    display: flex;
+    button {
+      margin-left: 16px;
+      text-transform: capitalize !important;
+    }
+    .react-tel-input{
+      input{
+        display: flex;
+        align-items: center;
+        width: 300px !important;
+        height: 46px;
+        border: 1px solid #cacaca;
+        border-radius: 5px;
+      }
+    }
+  }
+  &:before {
+    content: '\f0c9';
+
+    position: absolute;
+    top: 14px;
+    left: -35px;
+
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+  }
+}
+
+.toogle-forwading-wrapper:first-child:before {
+  top: 63px;
+}
+
+.toogle-forwading-wrapper:nth-child(3) {
+  .input-contact input {
+    padding-top: 0.67857143em;
+    padding-bottom: 0.67857143em;
+    height: 46px;
+
+    font-size: 16px;
+  }
+}
+
+.call-forwarding-wrapper {
+  .react-tel-input {
+    font-family: $gibson;
+  }
+  .call-forwarding-holder {
+    .button-input {
+    }
+  }
+  .phone-number-wrapper {
+    display: flex;
+    align-items: center;
+    padding: 0.67857143em 1em;
+    width: 300px;
+    height: 46px;
+
+    border: 1px solid #cacaca;
+    border-radius: 5px;
+
+    .label {
+      margin-right: 5px;
+
+      font-family: $gibson;
+      font-size: 12px;
+    }
+
+    p {
+      margin-bottom: 0;
+
+      font-family: $gibson;
+      font-size: 16px;
+    }
+
+    i {
+      margin-left: 5px;
+    }
+  }
+
+  .groupbtn-holder {
+    flex-direction: column;
+    justify-content: initial;
+
+    .groupbtn-title {
+      margin-bottom: 20px;
+    }
+  }
+
+  .callfowarding-btn-wrapper {
+    padding-top: 20px;
+
+    border-top: 1px solid $gray100;
+  }
+
+  .add-forwarding-wrapper {
+    margin: 40px 0;
+  }
+
+  .add-number {
+    margin-right: 5px;
+    margin-left: 250px;
+    color: $link-color;
+  }
+
+  .toggle-enable-holder {
+    margin-left: 20px;
+    width: 100px;
+  }
+
+  .activeBtn {
+    color: $white !important;
+
+    background: $green !important;
+  }
+
+  .forwarding-title {
+    margin-bottom: 20px;
+    font-family: 'Gibson Regular';
+    font-size: 20px;
+    i {
+      margin-left: 5px;
+    }
+  }
+
+  .call-forwarding-holder {
+    padding: 16px 0 0;
+    width: 888px;
+  }
+
+  .input-contact input {
+    width: 300px;
+  }
+
+  .input-timeout input {
+    width: 125px;
+  }
+
+  .add-number {
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .input-wrapper {
+    i {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1440px) {
+  .call-forwarding-wrapper {
+    .call-forwarding-holder {
+      width: 800px;
+    }
+
+    .phone-number-wrapper {
+      p {
+        font-size: 14px;
+      }
+
+      label {
+        font-size: 12px;
+      }
+    }
+
+    .forwarding-title,
+    .groupbtn-title {
+      font-size: 16px;
+    }
+  }
+
+  .toogle-forwading-wrapper:first-child:before {
+    top: 55px;
+  }
+
+  .toogle-forwading-wrapper:before {
+    left: -27px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .settings {
+    .call_rorwarding {
+      width: 100% !important;
+      .toogle-forwading-wrapper:nth-child(1) {
+        .input-contact {
+          .forwarding-title-holder {
+            padding-right: 114px;
+          }
+        }
+        .toggle-enable-holder {
+          p.forwarding-title {
+            position: absolute;
+            top: 0;
+            right: 0;
+          }
+        }
+      }
+      .toogle-forwading-wrapper {
+        flex-flow: column;
+        .toggle-enable-holder {
+          margin-left: 0;
+        }
+        .input-contact {
+          margin-bottom: 15px;
+          .phone-number-wrapper {
+            width: 100%;
+          }
+          .react-tel-input {
+            input.form-control {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+   .add-number {
+       margin-left: 0px !important;
+   }
+}

@@ -1,0 +1,41 @@
+.ui.selection.dropdown {
+  min-width: initial;
+  max-width: 100%;
+  min-height: initial;
+
+  font-size: 14px;
+
+  border-radius: 0;
+
+  // &.background-gray {
+  //   background: $gray100;
+  //   border-color: $gray100;
+  // }
+}
+.day_select_table .ui.default.dropdown:not(.button) > .text,
+.ui.dropdown:not(.button) > .default.text {
+  color: #c7c7c7 !important;
+}
+
+.ui.default.dropdown:not(.button) > .text,
+.ui.dropdown:not(.button) > .default.text {
+  color: $black;
+}
+
+.ui.dropdown .menu .active.item {
+  font-weight: initial;
+}
+
+.ui.selection.dropdown .menu > .item {
+  padding: 0 !important;
+}
+
+.ui.selection.dropdown .menu > .item .text {
+  display: flex;
+  padding: 0.78571429em 2.1em 0.78571429em 1em;
+}
+
+.settings .blacklist-settings p.block_user_title {
+  margin: 0 0 6px 0;
+  font-size: 14px;
+}

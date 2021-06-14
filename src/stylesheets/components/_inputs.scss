@@ -1,0 +1,39 @@
+.ui.input.input-gray {
+  input {
+    background-color: $gray100;
+    border: 1px solid $gray100;
+    border-radius: 0;
+  }
+}
+
+.ui.input > input[type="file"] {
+  color: transparent;
+  background: transparent;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+  box-shadow: none;
+
+  &::-webkit-file-upload-button {
+    visibility: hidden;
+  }
+
+  &::before {
+    content: "Upload File";
+    display: inline-block;
+    background: #0d68c9;
+    color: #fff;
+    border: 1px solid #999;
+    outline: none;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-family: "Open Sans", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Monaco", monospace;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px;
+  }
+}

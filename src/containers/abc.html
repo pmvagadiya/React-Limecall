@@ -1,0 +1,153 @@
+<div id="manageHubspotSettings" class="modal-body p-lg">
+  <div class="box p-4">
+    <div class="pb-4 b-b _600">Manage Hubspot</div>
+    <div class="box-body">
+      <div class="tab-content">
+        <input
+          type="hidden"
+          name="_token"
+          value="iGyUgtbtdkNpJvOWV7a1abCORFAx3oT7FICGWceU"
+        />
+        <div class="col-md-5">
+          <form onsubmit="return false">
+            <div class="p-4 box w-100-md">
+              <span>Please select your target events</span>
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <td>
+                      Incoming call<br />
+                      <span
+                        >Receive a notification in HubSpot for incoming
+                        calls.</span
+                      >
+                    </td>
+                    <td>
+                      <label class="md-check"
+                        ><input type="checkbox" value="1" id="incoming_call"/>
+                        <i class="blue"></i
+                      ></label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Successful call<br />
+                      <span
+                        >Receive a notification in HubSpot for successful
+                        calls.</span
+                      >
+                    </td>
+                    <td>
+                      <label class="md-check"
+                        ><input type="checkbox" value="1" id="successful_call"/>
+                        <i class="blue"></i
+                      ></label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Failed call<br />
+                      <span
+                        >Receive a notification in HubSpot for failed
+                        calls.</span
+                      >
+                    </td>
+                    <td>
+                      <label class="md-check"
+                        ><input type="checkbox" value="1" id="failed_call"/>
+                        <i class="blue"></i
+                      ></label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      New message<br />
+                      <span
+                        >Receive a notification in HubSpot for new
+                        messages.</span
+                      >
+                    </td>
+                    <td>
+                      <label class="md-check"
+                        ><input type="checkbox" value="1" id="new_message"/>
+                        <i class="blue"></i
+                      ></label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      New schedule call<br />
+                      <span
+                        >Receive a notification in HubSpot for new
+                        schedules.</span
+                      >
+                    </td>
+                    <td>
+                      <label class="md-check"
+                        ><input
+                          type="checkbox"
+                          value="1"
+                          id="new_schedule_call"/>
+                        <i class="blue"></i
+                      ></label>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="p-4 box w-100-md">
+              <span>Sync options</span>
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <td>
+                      Limecall to hubspot<br />
+                      <span
+                        >Push contact information changes from Limecall to
+                        HubSpot.</span
+                      >
+                    </td>
+                    <td>
+                      <label class="md-check"
+                        ><input
+                          type="checkbox"
+                          value="1"
+                          id="limecall_to_hubspot"/>
+                        <i class="blue"></i
+                      ></label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Hubspot to limecall<br />
+                      <span
+                        >Update the assigned call rep, lead score, and lead
+                        status via HubSpot.</span
+                      >
+                    </td>
+                    <td>
+                      <label class="md-check"
+                        ><input
+                          type="checkbox"
+                          value="1"
+                          id="hubspot_to_limecall"/>
+                        <i class="blue"></i
+                      ></label>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <button
+              type="button"
+              class="btn btn-primary text-white"
+              style="white-space: nowrap; float: right;"
+            >
+              Update
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

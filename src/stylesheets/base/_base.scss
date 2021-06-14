@@ -1,0 +1,144 @@
+*, *:before, *:after {
+  margin: 0;
+
+  box-sizing: border-box;
+}
+
+a, button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+
+  transition: all .2s ease-in-out;
+
+  @include on-event {
+    text-decoration: underline;
+  }
+}
+
+.ui.selection.dropdown .menu .item:first-child {
+  pointer-events: none !important;
+}
+
+.btn, a {
+  transition: all .3s ease-in-out;
+
+  @include on-event {
+    outline: 0;
+    box-shadow: none;
+  }
+}
+
+/**
+ * Basic styles for input fields
+ */
+input[type="email"], input[type="password"], input[type="text"] {
+  outline: none;
+
+  appearance: none;
+  @include on-event {
+    box-shadow: none;
+  }
+}
+
+input, select, button, textarea {
+  outline: none;
+
+  @include appearance(none);
+
+  &::-webkit-outer-spin-button, &::-webkit-inner-spin-button {
+    @include appearance(none);
+  }
+}
+
+html, body, #root, .App, .main-container {
+  // width: 100%;
+  // height: 100%;
+}
+
+.fullwidth-container {
+  width: calc(100% - 500px);
+  margin: auto;
+  padding-top: 47px;
+}
+
+.main-container {
+  // display: flex;
+}
+
+.notif-active {
+  margin-top: 53px;
+
+  .nav-container {
+    height: calc(100% - 53px);
+  }
+
+  .title-container {
+    z-index: 2;
+  }
+}
+
+body.dimmed.dimmable {
+  overflow-y: scroll !important;
+}
+
+.inner-main-contaner {
+  display: flex;
+  height: 95%;
+}
+
+.overflow-hide {
+  // position: fixed;
+  // overflow: hidden;
+}
+
+@media screen and (max-width: 1500px) {
+  .fullwidth-container {
+    width: calc(100% - 350px) !important;
+  }
+}
+
+
+@media screen and (max-width: 1440px) and (min-width: 1200px) {
+  .notif-active {
+    margin-top: 51px;
+
+    .nav-container {
+      height: calc(100% - 51px);
+    }
+  }
+
+  .fullwidth-container {
+    width: calc(100% - 0px);
+  }
+}
+
+@include respond-to(lg-down) {
+  .fullwidth-container {
+    width: calc(100% - 0px);
+    padding-left: 50px;
+  }
+}
+
+@include respond-to(sm-down) {
+  .fullwidth-container {
+    padding-left: 0;
+    margin-left: 50px;
+  }
+}
+
+@include respond-to(xs) {
+  .fullwidth-container {
+    width: calc(100% - 50px) !important;
+  }
+
+  .title-container {
+    z-index: 2;
+
+    .title-wrapper {
+      margin-left: 30px;
+    }
+  }
+}

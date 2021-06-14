@@ -1,0 +1,298 @@
+.teamsetting-wrapper {
+  padding-top: 40px;
+  width: 1018px;
+  max-width: 100%;
+
+  table.ui.single.line.table {
+    border: none;
+    box-shadow: 0 0 14px 4px #f5f5f5;
+  }
+
+  thead.top-table-header tr th {
+    padding-left: 30px;
+
+    font-weight: 500;
+
+    background: $gray100;
+  }
+
+  .ui.table tr {
+    td {
+      padding: 29px 20px 30px 30px;
+    }
+
+    &:hover {
+      background: $hover-row;
+    }
+  }
+
+  tr.table-content-row td:first-child {
+    font-weight: 600;
+    color: $link-color;
+  }
+
+  i.fa.fa-eye,
+  i.fa.fa-edit {
+    font-size: 16px;
+    color: #575757;
+    cursor: pointer;
+  }
+
+  .delete-icon {
+    img {
+      cursor: pointer;
+    }
+  }
+
+  i.fa.fa-eye {
+    margin-right: 15px;
+  }
+
+  .header-modal-style {
+    font-family: $lato;
+  }
+
+  .ui.dimmer {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+}
+
+.create-button-holder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  width: 1018px;
+  max-width: 100%;
+
+  box-shadow: 5px 3px 25px 10px #f5f5f5;
+
+  .create-button-title {
+    padding-left: 30px;
+    margin: 0;
+
+    font-family: $gibson;
+    font-size: 20px;
+    font-weight: 600;
+    color: $link-color;
+  }
+
+  .ui.button.btn-style {
+    padding: 19px 52px;
+    margin: 0 !important;
+
+    font-family: $gibson;
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
+
+.input-wrapper {
+  i {
+    display: none;
+  }
+}
+
+.ui.selection.dropdown {
+  width: 100%;
+  height: 35px;
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1440px) {
+  .create-button-holder {
+    .ui.button.btn-style {
+      font-size: 16px;
+    }
+
+    .create-button-title {
+      font-size: 16px;
+    }
+  }
+
+  .ui.basic.modal > .header.modal-header {
+    font-size: 16px;
+  }
+}
+
+.create-new-team-popup {
+  .actions.modal-button-wrapper {
+    button.button:nth-child(2) {
+      margin-right: 0 !important;
+    }
+  }
+  .modal-input-wrapper {
+    p.modal-input-text {
+      margin-right: 15px;
+    }
+    .input-wrapper {
+      width: 100%;
+      input[type='text'] {
+        margin: 0;
+      }
+    }
+  }
+}
+
+.settings {
+  .manage_teammates_main {
+    .input-search-wrapper {
+      .input-search-holder {
+        .input-search-box {
+          .input.input-gray {
+            input[type='text'] {
+              max-height: 41px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .settings {
+    .team_settings {
+      .create-button-holder {
+        flex-wrap: nowrap !important;
+        p.create-button-title {
+          font-size: 14px !important;
+          text-align: left !important;
+          padding-left: 12px !important;
+        }
+        button.button.btn-style {
+          padding: 9px 7px;
+          font-size: 14px;
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .settings {
+    .manage_teammates_main {
+      .input-search-wrapper {
+        .input-search-holder {
+          button.button {
+            padding: 0px 23px 0px 10px;
+            font-size: 19px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .create-new-team-popup {
+    width: 75% !important;
+    max-width: 320px !important;
+    .actions.modal-button-wrapper {
+      button.button.btn-blue {
+        padding: 0px 10px !important;
+        font-size: 13px;
+        width: auto !important;
+        height: 35px;
+        line-height: 35px;
+      }
+    }
+  }
+
+  .settings {
+    .manage_teammates_main {
+      .input-search-wrapper {
+        .input-search-holder {
+          justify-content: flex-end;
+          button.button {
+            padding: 10px 23px 10px 10px;
+            font-size: 12px !important;
+            margin-right: 5px !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+.add_team_member {
+  overflow: visible !important;
+  .ui.selection.dropdown {
+    .menu .item:first-child span.text {
+      padding: 10px 8px !important;
+    }
+    .menu {
+      > .item {
+        .text {
+          padding: 10px 8px !important;
+        }
+      }
+    }
+  }
+  transform: translateX(-50%) !important;
+  left: 50%;
+  .header.modal-header {
+    padding-left: 0 !important;
+  }
+  .actions.modal-button-wrapper {
+    button.button.btn-blue.btn-modal-style {
+      display: inline-block;
+      width: auto;
+      border-radius: 4px;
+      padding: 9px 30px;
+    }
+  }
+  .add-team-modal {
+    .input-wrapper {
+      width: 100% !important;
+      .modal-input-style {
+        width: 100% !important;
+      }
+      input[type='text'] {
+        width: 100%;
+        padding: 8px 10px !important;
+      }
+      input::placeholder {
+        padding-left: 0;
+      }
+    }
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .add_team_member {
+    width: 90% !important;
+    max-width: 320px !important;
+    left: 50%;
+    transform: translateX(-50%) !important;
+    padding: 0 15px !important;
+    .header.modal-header {
+      padding-left: 0 !important;
+    }
+    .actions.modal-button-wrapper {
+      padding-left: 0 !important;
+    }
+  }
+
+  .teams-wrapper .ui.checkbox label:after {
+    top: 0px !important;
+  }
+}
+
+.add_team_member {
+  .modal-checkbox-wrapper {
+    .ui.checkbox {
+      label {
+        padding: 0px 20px 0px 20px;
+      }
+    }
+  }
+}
+
+// button.ui.primary.button {
+//   width: 30%;
+// }
+
+// button.ui.button {
+//   width: 30%;
+// }
+// .content {
+//   padding: 1.25rem 2rem !important;
+// }

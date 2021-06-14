@@ -1,0 +1,107 @@
+.wizard {
+  padding: 28px 45px 21px;
+
+  background-color: $white;
+
+  &-title {
+    margin-bottom: 30px;
+
+    font-family: $gibson;
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  &-holder {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 56px;
+  }
+
+  &-item {
+    position: relative;
+
+    padding: 7px 0 7px 67px;
+
+    font-size: 19px;
+    color: $gray150;
+
+    &.active {
+      color: $black;
+
+      &:before {
+        border: 2px solid $link-color;
+        background-color: $link-color;
+      }
+    }
+
+    &:before {
+      content: "";
+
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 39px;
+      height: 39px;
+
+      border: 2px solid $gray150;
+      border-radius: 100%;
+    }
+
+    &:not(:last-of-type) {
+      margin-bottom: 38px;
+
+      &:after {
+        content: "";
+
+        position: absolute;
+        bottom: -33px;
+        left: 20px;
+
+        width: 1px;
+        height: 30px;
+
+        border-right: 1px dashed $gray150;
+      }
+    }
+  }
+
+  &-bottom-holder {
+    position: relative;
+
+    .title {
+      font-family: $gibson;
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 24px;
+    }
+
+    .description-text {
+      margin-bottom: 10px;
+      width: 215px;
+      max-width: 100%;
+
+      font-size: 17.7px;
+      line-height: 28px;
+    }
+
+    .ui.button.btn-blue {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+      width: 145px;
+      height: 50px;
+
+      font-size: 14px;
+
+      border-radius: 4px;
+    }
+
+    img {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+  }
+}

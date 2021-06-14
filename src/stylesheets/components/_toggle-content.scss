@@ -1,0 +1,307 @@
+.callsettings-wrapper {
+  padding: 50px 0 20px 33px;
+  width: 1065px;
+  max-width: 100%;
+
+  .ui.button.btn-blue {
+    padding: 10px 20px;
+    font-family: 'Open Sans', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono',
+      'Monaco', monospace;
+    font-weight: 600;
+    color: $white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px;
+  }
+}
+
+.toggle-group {
+  margin-bottom: 53px;
+  width: 100%;
+
+  &:last-of-type {
+    margin-bottom: 32px;
+  }
+
+  .toggle-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    max-width: 100%;
+  }
+
+  .input-with-toggle {
+    display: flex;
+    align-items: center;
+  }
+
+  .input-with-toggle input {
+    width: 55px;
+    padding: 10px;
+  }
+
+  .input-with-toggle p {
+    padding-left: 10px;
+  }
+
+  .toggle-holder {
+    display: flex;
+    align-items: center;
+  }
+
+  // .toggle-content {
+  //   padding: 0 150px 0 0;
+  // }
+}
+
+.call-title {
+  margin-bottom: 18px;
+
+  font-family: $gibson;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.call-description {
+  width: 545px;
+  max-width: 100%;
+
+  font-family: $gibson;
+  font-size: 14px;
+  font-weight: 400;
+  color: #b3b3b3;
+}
+
+.call-bottom-wrapper .file__validation {
+  color: #b3b3b3;
+  padding: 10px 0 0 0;
+}
+
+.callsettings-wrapper {
+  h4 {
+    font-size: 17px;
+    font-weight: 700;
+    color: #6b93af;
+    padding: 10px;
+  }
+
+  .callDetailsMainWrappers {
+    box-shadow: 0px 0px 9px #dcdada;
+    border-radius: 6px;
+
+    .callToggleHead {
+      padding: 20px 15px;
+      border-bottom: 1px solid #e3dede;
+      font-size: 16px;
+    }
+
+    .callTogglemMain {
+      .callToggles {
+        padding: 20px 15px 0px 15px;
+
+        .toggle-group {
+          margin-bottom: 20px;
+
+          @media(max-width:992px) and (min-width:768px) {
+            width: 100%;
+          }
+
+          .toggle-wrapper {
+            @media(max-width:1199px) {
+              width: 85%;
+            }
+
+            @media(max-width:1024px) {
+              width: 90%;
+            }
+
+            .toggle-content {
+              @media(max-width:992px) and (min-width:768px) {
+                width: 85%;
+              }
+
+              h3 {
+                font-size: 16px;
+              }
+
+              p {
+                font-size: 16px;
+              }
+            }
+
+            .toggle-holder {
+              @media(max-width:992px) and (min-width:768px) {
+                width: 15%;
+              }
+            }
+          }
+
+        }
+
+        .call-bottom-wrapper {
+          display: flex;
+          align-items: center;
+          margin-bottom: 30px;
+          padding-bottom: 10px;
+          // width: 1000px;
+          max-width: 100%;
+
+          @media(max-width:767px) {
+            margin-bottom: 20px;
+          }
+
+          .call-bottom-holder {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 75%;
+
+            @media(max-width:767px) {
+              display: block;
+            }
+
+            @media(max-width:1199px) {
+              width: 90%;
+            }
+
+            @media(max-width:1024px) {
+              width: 100%;
+            }
+
+            p {
+              margin-bottom: 0;
+            }
+
+            input.file_select {
+              max-width: 220px;
+
+              @media(max-width:992px) and (min-width:768px) {
+                width: 210px;
+              }
+            }
+
+            .audioWrap {
+              margin-top: 30px;
+              margin-left: auto;
+            }
+          }
+
+          .call-textarea-description {
+            width: 200px;
+            max-width: 100%;
+
+            font-family: $gibson;
+            font-size: 16px;
+            line-height: 19px;
+            color: #b3b3b3;
+          }
+
+          .call-textarea-holder {
+            padding-left: 51px;
+            width: 100%;
+
+            .call-textarea {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .callAlgorithmWrap {
+    box-shadow: 0px 0px 9px #dcdada;
+    border-radius: 6px;
+    padding: 20px 15px;
+
+    .call-bottom-wrapper {
+      margin-bottom: 10px;
+
+      .call-bottom-holder {
+        margin-bottom: 10px;
+      }
+
+      form {
+        .field {
+          margin: 0 90px 0 0;
+
+          @media(max-width:992px) and (min-width:768px) {
+            margin: 0 42px 0 0;
+          }
+        }
+      }
+    }
+
+    button {
+      border-radius: 4px !important;
+      margin-right: 10px;
+      margin-top: 10px;
+    }
+  }
+}
+
+.call-algorithm {
+  .call-bottom-holder {
+    flex: 0 0 40%;
+    max-width: 30%;
+
+    @media(max-width:992px) and (min-width:768px) {
+      max-width: 33%;
+    }
+  }
+
+  .ui.form {
+    display: flex;
+    align-items: center;
+
+    .field {
+      margin: 0 50px 0 0;
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1440px) {
+  .call-title {
+    font-size: 16px;
+  }
+
+  .call-description {
+    font-size: 14px;
+  }
+
+  .call-bottom-wrapper {
+    .call-textarea-description {
+      font-size: 14px;
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .callsettings-wrapper {
+    .call-bottom-wrapper {
+      .call-bottom-holder {
+        audio {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+
+  // .main-container {
+  //   overflow-x: hidden;
+  // }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .activeComponent-wrapper {
+
+    .call-schedules,
+    .countries-settings,
+    .callsettings-wrapper,
+    .sms-settings-wrapper,
+    .blacklist-settings,
+    .callerID-settings-wrapper {
+      padding: 10px 0px 0px 0px;
+    }
+  }
+}

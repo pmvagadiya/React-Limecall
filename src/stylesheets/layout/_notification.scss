@@ -1,0 +1,93 @@
+.notification {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 4;
+
+  background: linear-gradient(
+  to right,
+  rgba(55, 127, 63, 1) 0%,
+  rgba(76, 141, 61, 1) 27%,
+  rgba(103, 157, 59, 1) 54%,
+  rgba(129, 174, 57, 1) 79%,
+  rgba(153, 188, 56, 1) 100%
+  );
+
+  &-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+  }
+
+  p {
+    margin: 0;
+    margin-right: 8px;
+
+    font-size: 18px;
+    color: $white;
+  }
+
+  .ui.button {
+    padding: 8px 20px;
+
+    font-size: 17px;
+    color: $white;
+
+    background: rgba(0, 0, 0, .1);
+
+    transition: all .2s ease-in-out;
+
+    @include on-event {
+      background: rgba(0, 0, 0, .2);
+    }
+  }
+
+  .btn-close {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+
+    width: 20px;
+    height: 20px;
+
+    background-color: transparent;
+    border: 1px solid $white;
+    border-radius: 100%;
+
+    transform: translateY(-50%);
+
+    &:before, &:after {
+      content: "";
+
+      position: absolute;
+      top: 50%;
+
+      width: 70%;
+      height: 1px;
+
+      background-color: $white;
+    }
+
+    &:before {
+      transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    &:after {
+      transform: translate(-50%, -50%) rotate(-45deg);
+    }
+  }
+}
+
+@media screen and (max-width: 1440px) and (min-width: 1200px) {
+  .notification {
+    p {
+      font-size: 14px;
+    }
+
+    .ui.button {
+      font-size: 15px;
+    }
+  }
+}

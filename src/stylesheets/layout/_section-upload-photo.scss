@@ -1,0 +1,15 @@
+.holder-upload-logo {
+  display: flex;
+  flex-wrap: wrap;
+
+  .logo {
+    background-color: $gray100;
+  }
+
+  .ui.button {
+    padding: 13px 41px;
+
+    font-size: 16px;
+    color: $black;
+  }
+}

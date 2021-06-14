@@ -1,0 +1,147 @@
+.ui.cancel-subscription-wrapper {
+  width: 470px;
+  max-width: 100%;
+
+  transform: translateX(0%);
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+
+    .cancel-title {
+      margin: 0;
+
+      font-weight: 500;
+    }
+  }
+
+  .fa-times {
+    color: $gray150;
+
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+
+    @include on-event {
+      color: darken($gray150, 15%);
+    }
+  }
+
+  .content {
+    padding: 0;
+  }
+
+  .cancel-subs-text {
+    padding: 30px 40px;
+    margin: 0;
+
+    border-bottom: 1px solid $gray100;
+  }
+
+  .selection-wrapper {
+    padding: 20px 30px;
+
+    border-bottom: 1px solid $gray100;
+
+    .ui.selection {
+      position: relative;
+
+      padding: 10px;
+      width: 100%;
+      height: 100%;
+
+      border: none;
+
+      .default.text {
+        font-size: 16px;
+        color: $gray300 !important;
+      }
+
+      .text {
+        padding: 9px 0;
+
+        font-size: 16px;
+      }
+
+      .dropdown {
+        top: 50%;
+
+        padding: 0;
+        margin: 0;
+
+        transform: translateY(-50%);
+      }
+
+      .menu > .item .text {
+        padding: 9px 11px;
+      }
+    }
+  }
+
+  .input-wrapper {
+    padding: 30px 40px;
+
+    border-bottom: 1px solid $gray100;
+  }
+
+  .cancel-subs-descripiton {
+    font-weight: 400;
+    color: #858585;
+
+    span {
+      font-weight: 600;
+      color: $black;
+    }
+  }
+
+  .cancel-subs-description-holder {
+    padding: 20px 40px;
+  }
+
+  .btn-scancel-subscription-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 20px 40px;
+  }
+
+  .subscription-feedback-input {
+    width: 100%;
+
+    .input {
+      width: 100%;
+
+      input {
+        padding: 0;
+        width: 100%;
+        height: 100%;
+
+        border: none;
+
+        &::placeholder {
+          font-size: 16px;
+          color: $gray300;
+        }
+      }
+    }
+  }
+
+  .btn-scancel-subscription-wrapper {
+    border-top: 1px solid $gray100;
+
+    .btn-cancel {
+      padding: 15px 20px;
+
+      font-size: 15px;
+      color: #ffffff;
+
+      background: #f15a26;
+
+      transition: all 0.2s ease-in-out;
+
+      @include on-event {
+        background: darken(#f15a26, 10%);
+      }
+    }
+  }
+}

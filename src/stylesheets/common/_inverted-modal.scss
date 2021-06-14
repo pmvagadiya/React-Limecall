@@ -1,0 +1,122 @@
+.ui.modal.modal-inverted {
+  padding: 62px 69px;
+  width: 1030px;
+
+  .modal-inverted-title {
+
+    font-family: $gibson;
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  .recaptcha {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 198px;
+  }
+
+  .inverted-modal-btn-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 83px;
+    width: 100%;
+  }
+
+  .btn-sendcode, .btn-call-me {
+    padding: 20px 20px;
+    width: 187px;
+
+    font-family: $gibson;
+    font-size: 20px;
+    font-weight: 400;
+    margin: auto
+  }
+}
+
+//modal inverted verification code
+
+.ui.modal.modal-inverted-verification {
+  padding: 84px 143px 34px;
+  width: 1023px;
+
+  .verification-code-title {
+    margin-bottom: 65px;
+
+    font-family: $gibson;
+    font-size: 40px;
+    font-weight: 600;
+  }
+
+  .input-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .input {
+      width: 80%;
+
+      input {
+        font-size: 25px;
+      }
+    }
+  }
+
+  .btn-verification-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .btn-verifycode {
+      padding: 19px 103px;
+      margin-top: 55px;
+
+      font-family: $gibson;
+      font-size: 20px;
+      font-weight: 400;
+    }
+
+    .try-verify-text {
+      margin-top: 40px;
+
+      font-family: $gibson;
+      font-size: 20px;
+      font-weight: 400;
+      color: $link-color;
+
+      cursor: pointer;
+
+      @include on-event {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1440px) {
+  .ui.modal.modal-inverted {
+    .modal-inverted-title {
+      font-size: 28px;
+      text-align: center;
+    }
+
+    .btn-sendcode, .btn-call-me {
+      width: 160px;
+
+      font-size: 16px;
+    }
+  }
+
+  .ui.modal.modal-inverted-verification {
+    .verification-code-title {
+      font-size: 30px;
+      text-align: center;
+    }
+
+    .btn-verification-wrapper .try-verify-text {
+      font-size: 16px;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.ui.checkbox label {
+  padding-left: 38px;
+
+  font-size: 16.3px;
+}
+
+.ui.checkbox label:before {
+  width: 14px;
+  height: 14px;
+
+  border: 1px solid black;
+  border-radius: 0;
+}
+
+.ui.checkbox label:after {
+  top: -2px;
+
+  width: 14px;
+  height: 14px;
+
+  font-size: 11px;
+}
+
+@media screen and (max-width: 1440px)and (min-width: 1200px) {
+  .ui.checkbox label {
+    font-size: 14px;
+  }
+}

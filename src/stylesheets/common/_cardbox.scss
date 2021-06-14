@@ -1,0 +1,385 @@
+.monthlyUsage {
+  flex: 0 0 24%;
+  max-width: 24%;
+  //height: 310px;
+  border-radius: 5px;
+  border: 1px solid rgba(0,0,0,.2);
+  box-shadow: 0 4px 14px 0 rgba(0,0,0,.1);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    border: 1px solid #286efa;
+  }
+
+  .uppercardbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 35px 0 0;
+  }
+
+  .cardbox-call-log-list {
+    margin-top: 47px;
+    margin-bottom: 40px;
+
+    font-family: $gibson;
+    font-size: 2vw;
+  }
+}
+
+.flatRate {
+  width: 24%;
+  //height: 175px;
+
+  border-radius: 5px;
+  border: 1px solid rgba(0,0,0,.2);
+  box-shadow: 0 4px 14px 0 rgba(0,0,0,.1);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    border: 1px solid #286efa;
+  }
+
+  .uppercardbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 25px;
+    margin: 35px 0;
+  }
+
+  .cardbox-call-log-list {
+    margin-top: 40px;
+    //margin-bottom: 14px;
+
+    font-family: $gibson;
+    font-size: 2vw;
+    //font-weight: 600;
+  }
+}
+
+.cardbox.lead {
+  justify-content: flex-start;
+  width: 100%;
+  height: 155px;
+
+  border-radius: 5px;
+  border: 1px solid rgba(0,0,0,.2);
+  box-shadow: 0 4px 14px 0 rgba(0,0,0,.1);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    border: 1px solid #286efa;
+  }
+
+  .uppercardbox {
+    margin-top: 20px;
+  }
+
+  h2 {
+    font-family: $gibson;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+}
+
+.cardbox-wrapper-usage {
+  flex-basis: 30%;
+}
+
+.cardbox-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-usage-current {
+  padding: 20px 50px;
+}
+
+.cardbox-wrapper-current {
+  flex-basis: 68%;
+}
+
+.cardbox.usage {
+  justify-content: flex-start;
+  //height: 220px;
+
+  border-radius: 5px;
+  border: 1px solid rgba(0,0,0,.2);
+  box-shadow: 0 4px 14px 0 rgba(0,0,0,.1);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    border: 1px solid #286efa;
+  }
+
+  .cardbox-usage-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 35px 0;
+
+    .cardbox-title {
+      margin-top: 0;
+      margin-left: 0;
+
+      font-size: 20px;
+    }
+
+    .uppercardbox {
+      width: 100%;
+    }
+
+    .cardbox-usage-list {
+      margin: 15px 0px 0px;
+      //margin-bottom: 0;
+
+      font-family: $gibson;
+      font-size: 2vw;
+      //font-weight: 600;
+    }
+
+    .cardbox-text {
+      font-family: $gibson;
+      font-size: 20px;
+    }
+  }
+}
+
+.cardbox.current {
+  justify-content: flex-start;
+  height: 220px;
+
+  border-radius: 5px;
+  border: 1px solid rgba(0,0,0,.2);
+  box-shadow: 0 4px 14px 0 rgba(0,0,0,.1);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    border: 1px solid #286efa;
+  }
+
+  .cardbox-title {
+    margin-top: 37px;
+    margin-left: 0;
+  }
+}
+
+.cardbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #ffffff;
+
+  .cardbox-title {
+    margin-top: 7px;
+    //margin-left: 10px;
+
+    font-family: $gibson;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  .card-date-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 15px 6px;
+    width: 100%;
+
+    border-top: 1px solid $gray100;
+
+    .cardbox-text {
+      color: $gray300;
+    }
+  }
+
+  .upper-cardbox-log {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    //padding: 15px 42px 0;
+  }
+}
+
+.cardbox-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 50px;
+
+  .cardbox-number {
+    margin: 18px 0;
+   // margin-bottom: 10px;
+
+    font-size: 2vw;
+  }
+
+  .cardbox-text {
+    //text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+}
+
+.cardbox-wrapper-lead {
+  display: flex;
+  justify-content: space-between;
+  // padding: 3px 70px 30px;
+  padding: 20px 50px;
+
+  .cardbox-number {
+    margin: 18px 0;
+    margin-bottom: 10px;
+
+    font-size: 55px;
+  }
+
+  .cardbox-text {
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+}
+
+.flex-schedule {
+  padding: 20px 50px;
+  height: 438px;
+}
+
+.upcomming-scheduled-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // flex-basis: 49%;
+  // width: 100%;
+  width: 49%;
+
+  background-color: white;
+
+  border-radius: 5px;
+  border: 1px solid rgba(0,0,0,.2);
+  box-shadow: 0 4px 14px 0 rgba(0,0,0,.1);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    border: 1px solid #286efa;
+  }
+
+  .scheduled-text {
+    margin-top: 28px;
+    margin-bottom: 30px;
+
+    font-family: $gibson;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  table.ui.single.line.table,
+  table.ui.single.line.table thead tr th {
+    background: #f9f9f9;
+    border: none;
+  }
+
+  table.ui.single.line.table tbody tr td {
+    background: #ffffff;
+  }
+
+  .common-table-wrapper {
+    width: 100%;
+
+    .default-text:nth-child(1) {
+      // padding: 10px 45px 0 !important;
+      // width: 26.33%;
+      width: 15%;
+
+      font-size: 16px;
+      font-weight: 400;
+    }
+
+    .default-text {
+      padding: 5px 0;
+
+      font-size: 16px;
+      font-weight: 400;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .default-text:nth-child(2) {
+      // padding: 8px 14px 0;
+      // width: 44.33%;
+      width: 30%;
+    }
+
+    .default-text:nth-child(3) {
+      // padding: 8px 14px 0;
+      width: 55%;
+    }
+  }
+}
+
+.visitor-graph-wrapper {
+  // flex-basis: 49%;
+  width: 49%;
+  background: white;
+
+  border-radius: 5px;
+  border: 1px solid rgba(0,0,0,.2);
+  box-shadow: 0 4px 14px 0 rgba(0,0,0,.1);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    border: 1px solid #286efa;
+  }
+}
+
+@media #{$tablet} {
+  .monthlyUsage {
+    flex: 0 0 49%;
+    max-width: 49%;
+    margin-bottom: 10px;
+  }
+
+  .cardbox-wrapper {
+    flex-wrap: wrap;
+  }
+}
+
+// @media only screen and (min-width: 1200px) and (max-width: 1500px) {
+//   .cardbox.monthlyUsage {
+//     .cardbox-title {
+//       font-size: 16px;
+//     }
+
+//     .cardbox-call-log-list {
+//       font-size: 40px;
+//     }
+//   }
+
+//   .cardbox.flatRate {
+//     .cardbox-title {
+//       font-size: 16px;
+//     }
+//   }
+
+//   .cardbox-wrapper {
+//     .cardbox-number {
+//       font-size: 45px;
+//     }
+
+//     .cardbox-text {
+//       font-size: 16px;
+//     }
+//   }
+// }

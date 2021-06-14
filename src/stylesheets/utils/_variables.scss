@@ -1,0 +1,55 @@
+/// Regular font family
+/// @type List
+$font-opensans: "Open Sans";
+$text-font-stack: "Helvetica Neue Light",
+"Helvetica Neue",
+"Helvetica",
+"Arial",
+sans-serif !default;
+$lato: "Lato";
+$gibson: "Gibson Regular";
+
+/// Code (monospace) font family
+/// @type List
+$code-font-stack: $font-opensans,
+"DejaVu Sans Mono",
+"Bitstream Vera Sans Mono",
+"Monaco",
+monospace !default;
+
+/// Copy text color
+/// @type Color
+$text-color: #222222 !default;
+$btn-blue-hover: #0d68c9;
+$btn-green-hover: #1fa45c;
+$hover-color-nav: #364046;
+$hover-row: #e5f1ff;
+/// Main brand color
+/// @type Color
+$brand-color: #e50050 !default;
+
+/// Relative or absolute URL where all assets are served from
+/// @type String
+/// @example scss - When using a CDN
+///   $base-url: 'http://cdn.example.com/assets/';
+$base-url: "../assets/" !default;
+// Other Variables
+$red: #ec1d25;
+$pink: #ff7bad;
+$purple: #ff00ff;
+$orange: #f47504;
+$yellow: #ffb50a;
+$green: #13ca6e;
+$gray300: #b3b3b3;
+$gray150: #d3d3d3;
+$gray100: #f4f4f4;
+$link-color: #0071eb;
+$white: #ffffff;
+$black: #000000;
+$light-black: #393939;
+$dark-blue: #252f36;
+
+
+//Media Queries
+$smallDesktop: "screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1)";
+$tablet: "screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1)";

@@ -1,0 +1,82 @@
+.usage-wrapper {
+  margin-top: 50px;
+  width: 1000px;
+  max-width: 100%;
+  border: 1px solid $gray100;
+  padding: 20px;
+  background: $white;
+
+  h4 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .usage-details-wrapper {
+    .usage-details {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 10px 0;
+
+      p, label, span {
+        font-weight: 300;
+        display: block;
+        font-size: 16px;
+      }
+
+      span {
+        color: $gray300;
+      }
+
+      >div {
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+    }
+  }
+
+  .progressbar {
+    background: $gray100;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 10px 0;
+
+    &-inner {
+      background: $green;
+      height: 10px;
+    }
+  }
+
+  // thead.top-table-header tr th {
+  //   padding-left: 30px;
+
+  //   font-weight: 500;
+
+  //   background: #f4f4f4;
+  // }
+
+  // .ui.table tr {
+  //   &:hover {
+  //     background: $hover-row;
+
+  //     cursor: pointer;
+  //     transition: all .2s ease-in-out;
+  //   }
+
+  //   td {
+  //     padding-left: 30px;
+
+
+
+
+  //     &:last-child {
+  //       color: #f7a646;
+  //     }
+  //   }
+  // }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1440px) {
+  // .usage-wrapper .ui.table td {
+  //   font-size: 16px;
+  // }
+}

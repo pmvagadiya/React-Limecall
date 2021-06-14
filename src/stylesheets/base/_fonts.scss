@@ -1,0 +1,18 @@
+// @import url('https://fonts.googleapis.com/css?family=Rubik:400');
+
+// @include font-face($font-poppins, '../assets/fonts/', 'Poppins-Light', 'Poppins-Light', 200);
+// @include font-face($font-poppins, '../assets/fonts/', 'Poppins-Bold', 'Poppins-Bold', 600);
+// @include font-face($font-poppins, '../assets/fonts/', 'Poppins-SemiBold', 'Poppins-SemiBold', 500);
+// @include font-face($font-poppins, '../assets/fonts/', 'Poppins-ExtraBold', 'Poppins-ExtraBold', 800);
+
+// GET FROM GOOGLE FONTS IF YOU CAN!
+// Handle font variants as proper font-weights and styles INSTEAD of declaring NEW families. Follow Sample Above
+@include font-face($font-opensans, $base-url + "fonts/", "opensans-regular", "opensans-regular");
+
+@include font-face($lato, $base-url + "fonts/", "Lato-Regular", "Lato-Regular", 400);
+
+@include font-face($gibson, $base-url + "fonts/", "Gibson-Bold", "Gibson-Bold", 700);
+@include font-face($gibson, $base-url + "fonts/", "Gibson-SemiBold", "Gibson-SemiBold", 600);
+@include font-face($gibson, $base-url + "fonts/", "Gibson-Regular", "Gibson-Regular", 400);
+@include font-face($gibson, $base-url + "fonts/", "Gibson-Light", "Gibson-Light", 200);
+@import url("https://use.typekit.net/pla8zwu.css");

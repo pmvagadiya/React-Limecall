@@ -1,0 +1,109 @@
+.accordion {
+  .accordion-holder {
+    padding: 26px 32px;
+    margin-bottom: 33px;
+    width: 1490px;
+    max-width: 100%;
+
+    border: 1px solid $gray100;
+  }
+
+  .title {
+    position: relative;
+
+    &:hover {
+      background-color: $gray100;
+    }
+
+    &:before {
+      content: "\f054";
+
+      position: absolute;
+      top: 50px;
+      right: 50px;
+
+      font-family: "Font Awesome 5 Free";
+      font-size: 26px;
+      font-weight: 900;
+      color: $gray150;
+
+      transform: translateY(-50%);
+    }
+
+    &.active {
+      margin-bottom: 35px;
+      &:before {
+        content: "\f078";
+      }
+    }
+
+    .accordion-title {
+      margin-bottom: 16px;
+
+      font-family: $gibson;
+    }
+
+    .accordion-desc {
+      font-size: 15.6px;
+    }
+  }
+
+  .content {
+    display: block;
+    height: 0;
+
+    opacity: 0;
+    pointer-events: none;
+    transition: all .3s ease-in-out;
+
+    &.active {
+      height: auto;
+
+      opacity: 1;
+      pointer-events: initial;
+    }
+
+    .input-wrapper {
+      display: flex;
+      margin-bottom: 15px;
+
+      .transparent-input {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .input-title {
+        margin-bottom: 10px;
+      }
+    }
+
+    .holder-upload-logo {
+      .holder-logo {
+        width: 44.3%;
+      }
+
+      .logo {
+        margin-top: 10px;
+        width: 100%;
+        height: 205px;
+      }
+
+      .holder-upload {
+        padding: 46px 15px 10px;
+        width: 55.7%;
+      }
+
+      .upload-title {
+        margin-bottom: 13px;
+      }
+
+      .upload-desc {
+        font-size: 16.2px;
+
+        &:not(:last-of-type) {
+          margin-bottom: 13px;
+        }
+      }
+    }
+  }
+}

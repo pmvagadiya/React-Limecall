@@ -1,0 +1,225 @@
+.task-container {
+  padding-top: 47px;
+  margin-left: auto;
+  width: calc(100% - 64px);
+
+  .task-wrapper {
+    padding: 50px;
+
+    .task-button-holder {
+      display: flex;
+      justify-content: space-between;
+
+      .assign-button {
+        width: 30%;
+
+        .ui.basic.button {
+          font-family: "Gibson Regular";
+          font-weight: 500;
+          color: black !important;
+        }
+      }
+
+      .group-button {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 25%;
+
+        p {
+          display: flex;
+          align-items: center;
+          margin: 0;
+          width: 50%;
+
+          font-size: 14px;
+          font-weight: 500;
+          letter-spacing: 1px;
+
+          .ui.fitted.toggle.checkbox {
+            margin-left: 10px;
+          }
+        }
+
+        .ui.selection.dropdown {
+          width: 50%;
+
+          font-size: 14px;
+          font-weight: 500;
+          letter-spacing: 1px;
+        }
+      }
+    }
+
+    .task-table {
+      padding: 50px 0;
+
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 1px;
+
+      .ui.basic.table {
+        thead {
+          p {
+            margin: 0;
+            padding: 10px;
+
+            color: #b11a1a;
+          }
+        }
+
+        th {
+          font-weight: 300;
+          text-transform: uppercase;
+          color: #8a8a8a;
+
+          border-bottom: none;
+        }
+
+        td {
+          &:nth-of-type(2) {
+            color: #b11a1a;
+          }
+
+          .ui.checkbox {
+            margin-left: 20px;
+
+            label {
+              padding-left: 25px;
+
+              &:before {
+                content: '';
+                top: 0;
+                left: 0;
+
+                width: 17px;
+                height: 17px;
+
+                border-radius: 50px;
+              }
+
+              &:after {
+                top: 0;
+                left: 2px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1500px) {
+  .task-container {
+    .task-wrapper {
+      .task-button-holder {
+        .group-button {
+          justify-content: flex-end;
+          width: 40%;
+
+          p {
+            width: 40%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include respond-to(lg-down) {
+  .task-container {
+    .task-wrapper {
+      .task-button-holder {
+        .assign-button {
+          width: 45%;
+        }
+
+        .group-button {
+          justify-content: flex-end;
+          width: 50%;
+        }
+      }
+    }
+  }
+}
+
+@include respond-to(md-down) {
+  .task-container {
+    .task-wrapper {
+      .task-button-holder {
+        flex-wrap: wrap;
+
+        .assign-button {
+          width: 100%;
+
+          text-align: center;
+        }
+
+        .group-button {
+          margin-top: 20px;
+          width: 100%;
+        }
+      }
+
+      .task-table {
+        .ui.basic.table {
+          td {
+            .ui.checkbox {
+              margin-left: 0;
+
+              label {
+                font-weight: 400;
+                font-size: 14px;
+
+                &:before {
+                  width: 14px;
+                  height: 14px;
+                }
+
+                &:after {
+                  top: -1px;
+                  left: 1px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include respond-to(xs) {
+  .task-container {
+    width: calc(100% - 50px);
+
+    .task-wrapper {
+      padding: 15px;
+      margin-top: 15px;
+
+      .task-button-holder {
+        .assign-button {
+          .ui.basic.button {
+            margin-bottom: 5px;
+            width: 100%;
+          }
+        }
+
+        .group-button {
+          flex-wrap: wrap;
+
+          p {
+            width: 100%;
+            text-align: center;
+          }
+
+          .ui.selection.dropdown {
+            margin-top: 10px;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

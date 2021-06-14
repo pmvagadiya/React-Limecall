@@ -1,0 +1,74 @@
+.api-wrapper {
+  padding: 50px 0;
+
+  .api-holder {
+    padding: 20px;
+    margin-bottom: 30px;
+
+    background: #fffeed;
+    border: 1px solid rgba(34,36,38,.15);
+    border-radius: 5px;
+
+    p {
+      margin-bottom: 10px;
+
+      color: #f5a624;
+    }
+
+    .call-title {
+      margin: 0;
+
+      font-weight: 300;
+    }
+  }
+
+  .ui.celled.table {
+    tbody {
+      tr {
+        td {
+          width: 50%;
+
+          .api-add-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
+
+          .input-wrapper {
+            flex: 0 0 100%;
+
+            .ui.input {
+              width: 100%;
+            }
+
+          }
+        }
+      }
+    }
+  }
+}
+
+.create__webhook{
+  border-width:0px !important;
+  .error-message{
+    font-size: 10px;
+    color: red;
+  }
+}
+@media (min-width:320px) and (max-width:767px){
+  .settings{
+    .api_wrapper_main{
+      table.ui.celled.table{
+        display: block;
+      }
+    }
+  }
+  body .creat_web_hook{
+    width: 90% !important;
+    .footer{
+      button{
+        margin-right: 6px !important;
+      }
+    }
+  }
+}

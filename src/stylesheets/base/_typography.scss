@@ -1,0 +1,50 @@
+body {
+  font: normal 125% / 1.4 $gibson;
+  color: $text-color;
+}
+
+.default-text {
+  font-size: 14px;
+}
+
+.bold-text {
+  font-family: $gibson;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.semibold-text {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.subtext {
+  font-family: $gibson;
+  color: $gray300;
+}
+
+.warning-text {
+  font-family: $gibson;
+}
+
+.text-italic {
+  font-style: italic;
+}
+
+@media screen and (max-width: 1440px) and (min-width: 1200px) {
+  .default-text {
+    font-size: 14px;
+  }
+
+  .description-text {
+    font-size: 14px;
+  }
+
+  .semibold-text {
+    font-size: 16px;
+  }
+
+  .bold-text {
+    font-size: 16px;
+  }
+}

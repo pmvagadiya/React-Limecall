@@ -1,0 +1,30 @@
+.invoice-wrapper {
+  margin-top: 55px;
+  width: 88%;
+
+  thead.top-table-header tr th {
+    padding-left: 30px;
+    width: 20%;
+
+    font-size: 20px;
+    font-weight: 500;
+
+    background: $gray100;
+  }
+
+  .ui.table td {
+    padding-left: 30px;
+  }
+
+  tbody {
+    .table-content-row {
+      height: 372px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1440px) {
+  .invoice-wrapper thead.top-table-header tr th {
+    font-size: 16px;
+  }
+}

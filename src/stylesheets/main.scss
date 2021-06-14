@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+// Configuration and helpers
+@import 'utils/variables', 'utils/functions', 'utils/mixins';
+
+// Vendors
+@import 'vendors/font-awesome', 'vendors/font-awesome-solid',
+  'vendors/font-awesome-regular', 'vendors/font-awesome-brands';
+
+// Base stuff
+@import 'base/base', 'base/fonts', 'base/typography';
+
+// Common
+@import 'common/cardbox', 'common/common-single-table', 'common/common-modal',
+  'common/cancel-subscription-modal', 'common/add-credit-modal',
+  'common/chartjs', 'common/color-picker', 'common/group-button',
+  'common/inverted-modal', 'common/validation-error',
+  'common/call-forwarding-toggle';
+
+// Layout-related sections
+@import 'layout/navbar', 'layout/notification', 'layout/animation',
+  'layout/subscription-modal', 'layout/section-upload-photo';
+
+// Components
+@import 'components/buttons', 'components/requirement', 'components/wizard',
+  'components/golive', 'components/title', 'components/accordion',
+  'components/inner-sidebar', 'components/inner-tab', 'components/inputs',
+  'components/toggle-button', 'components/toggle-content', 'components/checkbox',
+  'components/select', 'components/team-settings', 'components/manage-teamates',
+  'components/billinginfo', 'components/usage', 'components/payment-method',
+  'components/invoice-billing', 'components/install', 'components/customize',
+  'components/call-routing', 'components/company', 'components/API_setting',
+  'components/installation', 'components/sharableLink',
+  'components/slackintegration', 'components/hubSpotRedirection';
+
+// Page-specific styles
+@import 'pages/home', 'pages/numbers', 'pages/leads', 'pages/call-dashboard',
+  'pages/settings', 'pages/widgets', 'pages/register', 'pages/integration',
+  'pages/login', 'pages/getstarted', 'pages/api-setting', 'pages/installation',
+  'pages/quick-setup', 'pages/meets', 'pages/conversation', 'pages/tasks';

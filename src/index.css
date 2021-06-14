@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Gibson Regular' !important;
+
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; 
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.input-error {
+  width: 100%;
+}
+.input-error .ui.input {
+  width: 100%;
+}
+
+.verify-modal {
+  max-width: 400px;
+}
+
+.verify-modal-content {
+  display: flex;
+  align-items: center;
+}
+
+.verify-modal-content .react-tel-input {
+  margin-right: 50px;
+  width: auto;
+}
+
+.verify-modal-content .ui.button {
+  color: #ffffff;
+  background-color: #0071eb;
+  border: 1px solid #0071eb;
+  border-radius: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.verify-modal-content .react-tel-input .form-control {
+  width: 100% !important;
+  margin-top: 0px !important;
+}
+
+.calling-modal {
+  max-width: 600px;
+}
+
+.calling-modal .verify-number {
+  background: #ffd0d8;
+  color: #db0000;
+}
+
+.calling-modal .recaptcha p {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+.calling-modal  .verify-number-container {
+  margin-bottom: 20px;
+}
+
+.calling-modal  .btn-container {
+  display: flex;
+  justify-content: flex-end;
+}

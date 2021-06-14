@@ -1,0 +1,209 @@
+.settings {
+  .company_main {
+    .Industry-dropdown {
+      width: 45%;
+      max-width: 100%;
+      label {
+        width: 44%;
+        max-width: 100%;
+      }
+      .ui.selection.dropdown {
+        width: 44%;
+        max-width: 100%;
+      }
+    }
+    .title::before {
+      top: 30px;
+    }
+
+    .holder-input {
+      .dropZone {
+        .dzu-dropzone {
+          label.dzu-inputLabel {
+            padding: 15px;
+          }
+        }
+      }
+    }
+  }
+  .dzu-dropzone .dzu-inputLabel img {
+    width: auto;
+    max-height: 180px;
+    max-width: 200px;
+    border-radius: 4px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .dzu-dropzone .dzu-inputLabel {
+    justify-content: flex-start !important;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .settings {
+    .company_main {
+      .title::before {
+        top: 30px;
+      }
+    }
+    .business_hours_main {
+      .availability-block {
+        .guest-availability-section {
+          .inner-div {
+            width: 35%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .settings {
+    .business_hours_main {
+      .availability-block {
+        .guest-availability-section {
+          .inner-div {
+            width: 35%;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .settings {
+    .business_hours_main {
+      .availability-block {
+        padding: 30px 20px !important;
+        .availability-toggle {
+          flex-flow: column-reverse;
+          margin-top: 15px;
+          align-items: flex-start;
+          p.title-label {
+            margin-left: 0 !important;
+            margin-bottom: 10px;
+          }
+        }
+        .guest-availability-section {
+          flex-flow: column;
+          .inner-div {
+            margin-bottom: 15px !important;
+            width: 100%;
+          }
+        }
+      }
+      .reminder_main {
+        .guest-availability-section {
+          display: block;
+          position: relative;
+          .inner-div:nth-child(2) {
+            width: 90%;
+          }
+          button.ui.button.btn-undefined.btn-delete {
+            margin-right: 0 !important;
+            position: absolute;
+            bottom: 0;
+            right: -14px;
+          }
+        }
+      }
+      .branding {
+        .guest-availability-section {
+          margin-top: 0px !important;
+        }
+      }
+    }
+    .company_main {
+      .input_url {
+        padding-top: 15px !important;
+        margin-bottom: 0px !important;
+        .labeled.input.input-gray {
+          .ui.label.label {
+            margin-left: -80px;
+          }
+        }
+      }
+      .Industry-dropdown {
+        width: 100%;
+        max-width: 100%;
+        label {
+          width: 100%;
+          max-width: 100%;
+        }
+        .ui.selection.dropdown {
+          width: 100%;
+          max-width: 100%;
+        }
+      }
+
+      .title::before {
+        top: 34px;
+        right: 10px;
+      }
+      p.bold-text {
+        font-size: 16px;
+      }
+      width: 100%;
+      .dropZone {
+        display: block;
+        .dzu-dropzone {
+          width: 100%;
+          margin-bottom: 15px;
+        }
+        .dropZone-content {
+          button.ui.button {
+            margin-top: 15px;
+          }
+        }
+      }
+      .holder-input {
+        display: block !important;
+        .text-area {
+          .input-wrapper {
+            width: 100%;
+            margin-bottom: 30px !important;
+          }
+        }
+        .width.grid:nth-child(1) {
+          .input-wrapper {
+            margin-bottom: 0px !important;
+          }
+          .inputWith-text {
+            margin-bottom: 25px !important;
+            width: 100%;
+            .ui.input.input-gray {
+              margin-bottom: 15px;
+            }
+            span {
+              padding: 10px 15px 10px 17px;
+            }
+          }
+        }
+        .width.grid {
+          .input-wrapper {
+            width: 100%;
+            margin: 0px 0px 18px !important;
+            .input.input-gray {
+              margin: 0;
+            }
+          }
+          .inputWith-text {
+            display: block;
+            .input.input-gray {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.dropzone_class{
+  width: 50%;
+  img{
+    width: 56px;
+    height: 38px;
+  }
+}

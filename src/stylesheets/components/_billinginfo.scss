@@ -1,0 +1,360 @@
+.billing-info-wrapper {
+  margin-top: 72px;
+  width: 1315px;
+  max-width: 100%;
+
+  .billing-title-holder {
+    padding: 20px 40px;
+
+    background-color: $gray100;
+  }
+
+  .billinginfo-content {
+    padding: 34px 42px;
+
+    border: 1px solid $gray100;
+
+    .btn-billing {
+      // padding: 7px 30px;
+      margin-top: 45px;
+
+      // font-size: 20px;
+    }
+  }
+  .billinginfo-input-holder.dropdown{
+    align-items: center;
+  }
+  .billinginfo-input-holder {
+    display: flex;
+    justify-content: space-between;
+    .input-invi-wrapper {
+      flex-basis: 45%;
+      .input-wrapper{
+        .input-error{
+          width: 169px;
+        }
+      }
+      .input-invi-dropDown{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .ui.dropdown{
+          // .ui.upward.dropdown{
+            height: 35px;
+            background: #f4f4f4;
+            border: none;
+            display: flex;
+            width: 176px;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 8px;
+          // }
+        }
+      }
+    }
+
+    .input-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 10px 0;
+    }
+
+    .input-invi-wrapper:nth-child(2) {
+      flex-basis: 49%;
+    }
+
+    input {
+      width: 400px;
+      height: 35px;
+
+      background: $gray100;
+      border: none;
+
+      &:focus {
+        background: $gray100;
+      }
+    }
+  }
+
+  .billinginfo-input-holder-last {
+    display: flex;
+
+    .input-invi-wrapper {
+      flex-basis: 33.33%;
+    }
+
+    .input-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 10px 0;
+
+      &:not(:first-child) {
+        justify-content: flex-end;
+
+        label {
+          margin-right: 25px;
+        }
+      }
+
+      &:nth-child(3) {
+        .input {
+          input {
+            width: 300px;
+          }
+        }
+      }
+    }
+
+    input {
+      width: 255px;
+      height: 35px;
+
+      background: $gray100;
+      border: none;
+
+      &:focus {
+        background: $gray100;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1550px) {
+  .billing-info-wrapper {
+    .billinginfo-input-holder input {
+      width: 176px;
+    }
+
+    // .billinginfo-content .btn-billing {
+    //   font-size: 16px;
+    // }
+
+    .billinginfo-input-holder-last {
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      input {
+        width: 176px;
+      }
+
+      .input-invi-wrapper {
+        flex-basis: 45%;
+      }
+
+      .input-invi-wrapper:nth-child(2) {
+        justify-content: space-between;
+        flex-basis: 49%;
+      }
+
+      .input-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px 0;
+      }
+
+      .input-wrapper:nth-child(3) {
+        justify-content: space-between;
+
+        .input input {
+          width: 176px;
+        }
+      }
+    }
+  }
+}
+
+.settings {
+  .invoices {
+    .common-table-wrapper {
+      overflow-x: scroll;
+    }
+  }
+}
+.credit_card_main {
+  .credit_card_detail {
+    .add-credit-input-holder {
+      .input-wrapper {
+        justify-content: flex-start;
+        label.default-text {
+          width: 120px;
+          margin-right: 0;
+        }
+      }
+      .expiry-holder {
+        label.default-text {
+          width: 120px;
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .settings {
+    .credit_card_detail {
+      width: 100%;
+      .input-wrapper {
+        .name-number-card {
+          width: 78%;
+        }
+        input {
+          width: 100% !important;
+        }
+      }
+    }
+    .credit_card_main {
+      .saved-card-holder {
+        overflow-x: scroll;
+      }
+    }
+    .billing_info_main {
+      .billinginfo-content {
+        .billinginfo-input-holder {
+          .input-invi-wrapper {
+            .input-wrapper {
+              label {
+                min-width: 130px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .available-phone-credits {
+      overflow: initial !important;
+      .credits {
+        width: 60% !important;
+      }
+      .holder-subscription {
+        overflow: scroll;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .settings {
+    .credit_card_detail {
+      width: 100%;
+      .input-wrapper {
+        .name-number-card {
+          width: 78%;
+        }
+        input {
+          width: 100% !important;
+        }
+      }
+    }
+    .credit_card_main {
+      .saved-card-holder {
+        overflow-x: scroll;
+      }
+    }
+    .billing_info_main {
+      margin-top: 22px;
+      .billinginfo-content {
+        .billinginfo-input-holder {
+          .input-invi-wrapper {
+            .input-wrapper {
+              label {
+                min-width: 130px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .available-phone-credits {
+      overflow: initial !important;
+      .credits {
+        width: 60% !important;
+      }
+      .holder-subscription {
+        overflow: scroll;
+      }
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .filter_section {
+    display: none;
+  }
+  .settings {
+    .credit_card_detail {
+      width: 100%;
+      margin-top: 17px;
+      .add-credit-input-holder {
+        padding: 5px 20px 0 17px;
+      }
+      .expiry-holder {
+        display: block;
+        .expiry-input-holder {
+          display: flex;
+        }
+      }
+      .input-wrapper {
+        display: block;
+        label {
+          width: 100% !important;
+        }
+        .input-last {
+          width: 100%;
+        }
+        .name-number-card {
+          width: 100%;
+        }
+        input {
+          width: 100% !important;
+        }
+      }
+    }
+    .billing_info_main {
+      .billinginfo-content {
+        button.ui.button.btn-blue.btn-billing,
+        button.ui.button.btn-grey.undefined {
+          margin-right: 15px !important;
+        }
+        .billinginfo-input-holder {
+          .input-invi-wrapper {
+            .input-wrapper {
+              label {
+                min-width: 100px;
+              }
+            }
+            .input-wrapper {
+              .ui.input {
+                width: 100%;
+              }
+              .ui.input {
+                input {
+                  width: 100%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .available-phone-credits {
+      overflow: initial !important;
+      .credits {
+        width: 100% !important;
+      }
+      .holder-subscription {
+        table.single.line.table {
+          margin-bottom: 0px;
+        }
+        overflow-y: scroll;
+      }
+    }
+  }
+}
+.billing_wrapper {
+  width: 70%;
+  margin: auto;
+}

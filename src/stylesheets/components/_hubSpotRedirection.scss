@@ -1,0 +1,95 @@
+.hubspot_main_wrapper {
+  font-family: 'Gibson Regular';
+  font-size: 16px;
+  .hubspot_content {
+    width: 90%;
+    margin: auto;
+  }
+  .box,
+  .box-color {
+    background-color: #fff;
+    position: relative;
+    margin-bottom: 1.5rem;
+  }
+
+  .box-header {
+    position: relative;
+    padding: 1rem;
+  }
+  ._600 {
+    font-weight: 600;
+  }
+  .box-body {
+    padding: 1rem;
+  }
+
+  .box-footer {
+    padding: 1rem;
+  }
+
+  .box-divider {
+    border-bottom: 1px solid rgba(120, 130, 140, 0.13);
+    margin: 0 16px;
+    height: 0;
+  }
+
+  .box-tool {
+    position: absolute;
+    right: 16px;
+    top: 14px;
+  }
+
+  .box-radius-1 .box-header {
+    border-radius: 1px 1px 0 0;
+  }
+
+  .box-radius-1 .box-footer {
+    border-radius: 0 0 1px 1px;
+  }
+
+  .box-radius-2,
+  .box-radius-2 .box,
+  .box-radius-2 .box-color {
+    border-radius: 2px;
+  }
+
+  .box-radius-2 .box-header {
+    border-radius: 2px 2px 0 0;
+  }
+
+  .box-radius-2 .box-footer {
+    border-radius: 0 0 2px 2px;
+  }
+
+  .box-shadow {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15), 0 -1px 0px rgba(0, 0, 0, 0.02);
+  }
+  .box-radius-2,
+  .box-radius-2 .box,
+  .box-radius-2 .box-color {
+    border-radius: 2px;
+  }
+  .box-shadow-2,
+  .box-shadow-2 .box,
+  .box-shadow-2 .box-color {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15), 0 -1px 0px rgba(0, 0, 0, 0.02);
+  }
+  .box,
+  .box-color {
+    background-color: #fff;
+    position: relative;
+    margin-bottom: 1.5rem;
+  }
+  .hubspot_content .shadow {
+    margin-top: 80px;
+    .box-shadow {
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+    }
+  }
+
+  .hubspot-btn {
+    margin-top: 24px;
+    white-space: nowrap;
+    float: right;
+  }
+}

@@ -1,0 +1,738 @@
+.homebanner-wrapper {
+  // display: flex;
+  // padding: 20px 60px 57px;
+  // margin-top: 113px;
+  // margin-left: 71px;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+
+  .home-card-wrapper {
+    // display: flex;
+    // justify-content: flex-end;
+    // flex-basis: 0;
+    flex: 0 0 600px;
+    max-width: 600px;
+
+    .home-card {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 25px;
+      // width: 525px;
+      // height: 150px;
+      box-shadow: 5px 3px 25px 10px #f5f5f5;
+
+      .home-card-content {
+        display: flex;
+        align-items: center;
+
+        .home-card-counter {
+          margin: 0 11px 0 6px;
+
+          font-family: $gibson;
+          font-size: 60px;
+        }
+
+        .home-card-text {
+          font-family: $gibson;
+          font-size: 25px;
+          line-height: 30px;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+
+  .homebanner-text-wrapper {
+    // padding: 9px 260px 0 56px;
+    padding: 0 50px;
+
+    .homebanner-title {
+      margin-bottom: 8px;
+
+      font-family: $gibson;
+      font-size: 30px;
+      font-weight: 500;
+    }
+
+    .homebanner-description {
+      font-family: $gibson;
+      font-size: 18px;
+      font-weight: 300;
+      color: #9a9a9a;
+    }
+  }
+}
+
+.home-card-button-wrapper {
+  // display: flex;
+  // align-items: center;
+  // flex-basis: 35%;
+}
+
+.home-card-button {
+  padding: 10px 40px;
+
+  font-family: $code-font-stack;
+  font-size: 14px;
+  font-weight: 300;
+  color: #ffffff;
+  // text-transform: uppercase;
+
+  border: none;
+
+  &:hover {
+    color: $link-color;
+
+    background: transparent;
+  }
+}
+
+.all_activites {
+  .filter-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 30px;
+
+    .date-range-parent {
+      display: flex;
+
+      .ui.selection.dropdown {
+        height: auto;
+        padding: 9px 38px 9px 22px;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        min-width: 250px
+      }
+
+      .ui.selection.dropdown>.dropdown.icon {
+        padding: 5px 5px 5px 5px !important;
+      }
+
+      input.form-control {
+        margin-left: 20px;
+      }
+    }
+
+    .ui.selection.dropdown {
+      padding: 21px 38px 21px 22px;
+
+      font-size: 20px;
+    }
+
+    .filter-holder {
+      position: relative;
+
+      padding: 15px 22px 15px 15px;
+
+      background: #ffffff;
+      display: flex;
+      border-radius: 5px;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease-in-out;
+
+      .react-date-picker__wrapper {
+        border: 0 !important;
+      }
+
+      .react-date-picker__clear-button.react-date-picker__button {
+        display: none !important;
+      }
+
+      .react-date-picker__calendar-button {
+        //display: none !important;
+        // background-color: green !important;
+        // background-image: url('../assets/images/10.svg');
+      }
+
+      &:hover {
+        border: 1px solid #286efa;
+      }
+
+      // &:after {
+      //   content: url("../assets/images/chevron-down.png");
+
+      //   position: absolute;
+      //   top: 23%;
+      //   right: 4%;
+      // }
+
+      .react-datepicker-wrapper {
+        display: inline-block;
+        margin: 0 5px;
+        width: 150px;
+
+        input {
+          width: 100%;
+
+          font-size: 1vw;
+          text-align: center;
+
+          border: $white;
+        }
+      }
+    }
+  }
+}
+
+.homecontent-wrapper {
+
+  // padding-left: 72px;
+  // background-color: $gray100;
+  .number-title {
+    display: flex;
+    justify-content: center;
+    background: #f1d91b8a;
+    width: 35%;
+    margin: 20px auto;
+    height: 45px;
+    align-items: center;
+  }
+
+}
+.heading-container-main{
+  padding-left: 50px!important;
+}
+
+@media #{$smallDesktop} {
+  .homebanner-wrapper {
+    .homebanner-text-wrapper {
+      .homebanner-title {
+        font-size: 35px;
+      }
+
+      .homebanner-description {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@media #{$tablet} {
+  .homebanner-wrapper {
+    flex-wrap: wrap;
+    padding: 20px 50px;
+
+    .home-card-wrapper {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+
+    .homebanner-text-wrapper {
+      padding: 10px 0;
+
+      .homebanner-title {
+        font-size: 30px;
+      }
+
+      .homebanner-description {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1440px) {
+  .homebanner-text-wrapper {
+    padding: 9px 50px 0 55px;
+  }
+
+  .monthlyUsage {
+    height: 280px;
+  }
+
+  .cardbox-wrapper {
+    padding: 30px 65px 30px 0;
+    margin-top: 20px;
+  }
+
+  .homebanner-wrapper,
+  .homecontent-wrapper,
+  .chart-wrapper {
+    margin-left: 48px;
+  }
+  .heading-container-main{
+    padding-left: 0!important;
+  }
+
+  .cardbox-wrapper-lead,
+  .flex-usage-current,
+  .flex-schedule {
+    padding: 3px 66px 30px 0;
+  }
+
+  .homecontent-wrapper {
+    padding-left: 62px;
+  }
+
+  .home-card-content {
+    .home-card-counter {
+      font-size: 50px;
+    }
+
+    .home-card-text {
+      font-size: 20px;
+    }
+  }
+
+  .home-card {
+    width: 500px;
+  }
+
+  .home-card-button {
+    font-size: 16px;
+  }
+
+  .homebanner-text-wrapper {
+    .homebanner-title {
+      font-size: 40px;
+    }
+
+    .homebanner-description {
+      font-size: 16px;
+    }
+  }
+
+  .visitor-graph-holder {
+    width: 100%;
+  }
+
+  .filter-wrapper .filter-holder .react-datepicker-wrapper {
+    width: 120px;
+
+    input {
+      font-size: 16px;
+    }
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .homebanner-wrapper {
+    .homebanner-text-wrapper {
+      padding: 0;
+    }
+  }
+
+  .homecontent-wrapper {
+    .filter-wrapper {
+      .filter-holder {
+        .react-datepicker-wrapper {
+          input {
+            font-size: 15px;
+          }
+        }
+
+        .react-datepicker-popper {
+          .react-datepicker__month-container {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+
+    .cardbox-wrapper {
+      .cardbox-text {
+        font-size: 15px;
+      }
+
+      .cardbox {
+        .upper-cardbox-log {
+          padding: 15px 0;
+        }
+
+        // .card-date-wrapper {
+        //   padding: 0;
+        // }
+
+        .cardbox-title {
+          margin-left: 0;
+
+          font-size: 20px;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+@include respond-to(lg-down) {
+  .homebanner-wrapper {
+    flex-wrap: wrap;
+
+    .home {
+      &-card-wrapper {
+        flex: 100%;
+        order: 2;
+        max-width: 100%;
+        width: 100%;
+      }
+
+      &-card {
+        justify-content: space-evenly !important;
+        margin: auto;
+        margin-top: 30px;
+        width: 80%;
+      }
+
+      &banner-text-wrapper {
+        order: 1;
+      }
+    }
+  }
+
+  .homecontent-wrapper {
+    .cardbox-container {
+      .cardbox-usage-wrapper {
+        text-align: center;
+      }
+    }
+  }
+}
+
+@include respond-to(sm-down) {
+  .homebanner-wrapper {
+    .home {
+      &-card-wrapper {
+        flex: 100%;
+        order: 2;
+        max-width: 100%;
+        width: 100%;
+      }
+
+      &-card {
+        flex-wrap: wrap;
+        width: 100%;
+      }
+
+      &-card-content {
+        justify-content: center;
+        width: 100%;
+      }
+
+      &-card-button-wrapper {
+        width: 100%;
+
+        button {
+          width: 100%;
+        }
+      }
+
+      &banner-text-wrapper {
+        text-align: center;
+
+        .homebanner-title {
+          font-size: 30px;
+        }
+
+        .homebanner-description {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  .homecontent-wrapper {
+    .filter-wrapper {
+      .filter-holder {
+        width: 100%;
+      }
+    }
+
+    .cardbox-wrapper {
+      flex-wrap: wrap;
+      padding: 0 50px;
+
+      .monthlyUsage {
+        flex: 100%;
+        margin-bottom: 20px;
+        max-width: 100%;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      .flatRate {
+        margin-bottom: 20px;
+        width: 100%;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      &-lead {
+        padding: 0 50px;
+        margin-bottom: 0;
+      }
+    }
+
+    .flex-usage-current {
+      flex-wrap: wrap;
+      padding: 0 50px;
+      padding-bottom: 20px;
+
+      .cardbox-wrapper-usage {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+      }
+
+      .cardbox-wrapper-current {
+        flex-basis: 100%;
+      }
+    }
+
+    .flex-schedule {
+      flex-wrap: wrap;
+      padding: 0 50px;
+      padding-bottom: 20px;
+
+      .upcomming-scheduled-wrapper {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+
+      .visitor-graph-wrapper {
+        width: 100%;
+      }
+    }
+  }
+
+  .chart-wrapper {
+    padding: 0 50px;
+    padding-bottom: 20px;
+  }
+}
+
+@include respond-to(xs) {
+  .title-container {
+    width: 100%;
+    left: 0;
+  }
+
+  .homebanner-wrapper {
+    padding: 20px 10px;
+
+    .homebanner-text-wrapper {
+      padding: 0;
+    }
+  }
+
+  .homecontent-wrapper {
+
+    .filter-wrapper,
+    .cardbox-wrapper,
+    .flex-usage-current {
+      padding: 20px 10px;
+    }
+
+    .cardbox-wrapper-lead {
+      padding: 0 10px;
+
+      .default-text {
+        text-align: center;
+      }
+    }
+
+    .flex-schedule {
+      padding: 0 10px;
+
+      .scheduled-text {
+        text-align: center;
+      }
+    }
+  }
+
+  .chart-wrapper {
+    padding: 0 10px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .home_page {
+    width: calc(100% - 180px) !important;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .home_page {
+    width: calc(100% - 180px) !important;
+
+    .homecontent-wrapper .cardbox-wrapper .flatRate {
+      width: 49%;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .home_page {
+    width: calc(100% - 100px) !important;
+
+    .homecontent-wrapper .cardbox-wrapper .flatRate {
+      width: 49%;
+      margin-bottom: 10px;
+    }
+
+    .number-title.massage_box {
+      width: 45%;
+    }
+
+    .schedule_calls {
+      flex-flow: wrap;
+    }
+
+    .schedule_calls .upcomming-scheduled-wrapper {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    .schedule_calls .visitor-graph-wrapper {
+      width: 100%;
+    }
+
+    .schedule_calls .upcomming-scheduled-wrapper .common-table-wrapper {
+      height: 340px !important;
+      overflow-x: scroll;
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .home_page {
+    width: calc(100% - 50px) !important;
+    margin-right: 0;
+
+    .homecontent-wrapper .cardbox-wrapper .flatRate .uppercardbox p.cardbox-call-log-list {
+      font-size: 16px;
+    }
+
+    .all_activites {
+      .chart-holder {
+        overflow-x: scroll;
+      }
+
+      .chart-box {
+        width: 500px;
+      }
+    }
+
+    .deatil_box {
+      .cardbox.monthlyUsage {
+        .uppercardbox {
+          p.cardbox-call-log-list {
+            font-size: 16px;
+          }
+        }
+
+        .upper-cardbox-log {
+          font-size: 16px;
+        }
+      }
+    }
+
+    .main_title {
+      font-size: 18px !important;
+    }
+
+    .number-title.massage_box {
+      width: 85%;
+    }
+
+    .date_set {
+      flex-flow: column;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.custom-range-parent .menu {
+  max-height: fit-content !important;
+}
+
+.deatil_box .cardbox.monthlyUsage {
+  position: relative;
+  padding: 15px 15px 40px 15px;
+}
+
+.cardbox.monthlyUsage .uppercardbox {
+  padding-top: 0;
+}
+
+.deatil_box .cardbox.monthlyUsage .card-date-wrapper {
+  position: absolute;
+  bottom: 0;
+}
+
+.cardbox.monthlyUsage .uppercardbox {
+  .cardbox-image-wrapper {
+    .cardbox-title {
+      margin-top: 3px !important;
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 372px) {
+  .homecontent-wrapper .filter-wrapper .filter-holder.date_set {
+    margin-top: 25px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 575px) {
+  .home_page .homecontent-wrapper .filter-wrapper {
+    padding-bottom: 0;
+  }
+
+  .homecontent-wrapper .filter-wrapper .filter-holder.date_set {
+    margin-bottom: 0;
+  }
+
+  .date-range-parent {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-left: 20px;
+
+    .ui.selection.dropdown {
+      height: auto;
+      padding: 9px 38px 9px 22px;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      min-width: 250px
+    }
+
+    .ui.selection.dropdown>.dropdown.icon {
+      padding: 5px 5px 5px 5px !important;
+    }
+
+    input.form-control {
+      margin-top: 20px;
+      margin-left: 20px;
+    }
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+  .homecontent-wrapper .filter-wrapper .filter-holder.date_set,
+  .home_page .homecontent-wrapper .our_services,
+  .home_page .deatil_box {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .heading-container-main{
+    margin: 10px 0 10px !important;
+  }
+}
+@media (max-width: 576px) {
+  .heading-container-main{
+    padding-left: 10px!important;
+  }
+}

@@ -1,0 +1,225 @@
+.innersidebar-container {
+  position: fixed;
+
+  padding: 37px 0;
+  // margin-top: 47px;
+  // margin-left: 73px;
+  width: 15%;
+  height: 100%;
+
+  background-color: $gray100;
+  color: $black;
+
+  .innersidebar-subitem {
+    padding: 13px 35px;
+
+    cursor: pointer;
+
+    &:hover {
+      background: $hover-row;
+
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+    }
+
+    &.active {
+      font-weight: 600;
+    }
+
+    span {
+      font-family: $gibson;
+      font-size: 18px;
+
+      transition: all 0.3s ease-in-out;
+    }
+
+    // .active {
+    //   font-weight: 600;
+
+    //   @include on-event {
+    //     color: $white;
+    //   }
+    // }
+
+    font-weight: 300;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1440px) {
+  .innersidebar-container {
+    // margin-left: 47px;
+    // width: 180px;
+
+    .innersidebar-subitem {
+      padding: 13px 30px;
+
+      // span {
+      //   font-size: 16px;
+      // }
+    }
+  }
+}
+
+// add new
+
+.settings {
+  .innnerTab_wrapper {
+    display: none;
+  }
+}
+.add_personal_link .set_images label.dzu-inputLabel {
+  padding: 15px;
+}
+.settings .mobile_side_menu {
+  display: none;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .settings {
+    .account_main{
+      .title::before{
+        right: 5px !important;
+      }
+    }
+    .change_password{
+      .title::before{
+        right: 5px !important;
+      }
+    }
+    .tab-wrapper .availability_main .guests_book .guest-availability-section {
+      flex-flow: column;
+    }
+    .tab-wrapper .Reminder .guest-availability-section .inner-div:nth-child(1) {
+      width: 28px;
+      margin-right: 7px;
+    }
+    .tab-wrapper .Reminder .guest-availability-section .inner-div:nth-child(2) {
+      width: 100%;
+      margin-right: 0;
+    }
+    .tab-wrapper
+      .Reminder
+      .guest-availability-section
+      .inner-div:nth-child(1)
+      .input
+      input {
+      width: 100%;
+      padding-right: 5px;
+      padding-left: 8px;
+      min-width: 30px;
+    }
+    .tab-wrapper .Reminder .guest-availability-section .btn-delete {
+      margin-right: 0 !important;
+    }
+    .tab-wrapper
+      .availability_main
+      .guests_book
+      .guest-availability-section
+      .inner-div {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+    .tab-wrapper .availability_main .availability-block {
+      padding: 15px !important;
+    }
+    .account_main .content .holder .input-styles .input-wrapper {
+      width: 100% !important;
+    }
+    .tab-wrapper .holder-account .change_password .content .input-invi-wrapper {
+      flex-flow: column;
+    }
+    .mobile_side_menu {
+      position: absolute;
+      top: 13px;
+      right: 17px;
+      cursor: pointer;
+      z-index: 99;
+      height: 30px;
+      width: 30px;
+      background: #ccc;
+      border-radius: 40px;
+      text-align: center;
+      line-height: 34px;
+      display: block;
+    }
+    .tab-wrapper
+      .activeComponent-wrapper
+      .blacklist-settings
+      .holder-table.blocked_email {
+      overflow-x: scroll;
+    }
+    .innnerTab_wrapper {
+      display: block;
+    }
+    .innersidebar-wrapper .innersidebar-subitem .innnerTab_wrapper {
+      display: none;
+    }
+    .innersidebar-wrapper .innersidebar-subitem.active .innnerTab_wrapper {
+      display: block;
+    }
+    .tab-wrapper .innertab-wrapper {
+      display: none;
+    }
+    .innersidebar-container {
+      position: absolute !important;
+      top: 59px;
+      left: 64px;
+      background: #cccccc;
+      z-index: 3;
+      transform: translateX(-140%);
+      width: 50% !important;
+      padding: 15px 0px !important;
+      transition: all 0.5s;
+      .innersidebar-wrapper {
+        background: #ccc;
+      }
+    }
+    .innersidebar-container.open {
+      transform: translateX(0%);
+    }
+    .innersidebar-wrapper {
+      .innertab-item > div {
+        font-size: 14px;
+        justify-content: flex-start;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .notification_detail .node-checkbox h2 {
+    min-height: 50px;
+    margin-bottom: 7px !important;
+  }
+  .settings {
+    .innertab-wrapper {
+      .innertab-item > div {
+        padding: 12px 9px !important;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .notification_detail .node-checkbox h2 {
+    min-height: 50px;
+    margin-bottom: 7px !important;
+  }
+  .settings {
+    .innertab-wrapper {
+      .innertab-item > div {
+        padding: 15px 13px !important;
+      }
+    }
+    .notification_detail .holder-checkbox {
+      padding-right: 10px;
+    }
+  }
+}
+
+
+@media (min-width:320px) and (max-width:575px) {
+  .settings .innersidebar-container{
+    left: 50px !important;
+  }
+}

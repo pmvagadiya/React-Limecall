@@ -1,0 +1,265 @@
+.call-routing {
+  background-color: $white;
+
+  .call-title-holder {
+    padding: 14px 20px 14px;
+
+    border: 1px solid $gray100;
+    p {
+      text-align: center;
+    }
+
+    .title-text {
+      margin-bottom: 0;
+
+      font-family: $gibson;
+      font-size: 24px;
+      font-weight: 600;
+    }
+  }
+
+  .call-routing-content {
+    padding: 52px 20px;
+
+    border-bottom: 1px solid $gray100;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+    .call-routing-text {
+      margin-bottom: 9px;
+
+      font-family: $gibson;
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    .call-routing-description {
+      margin-bottom: 10px;
+
+      font-family: $gibson;
+      font-size: 20px;
+      font-weight: 400;
+    }
+  }
+
+  .requiredText {
+    position: RELATIVE;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    margin: 2px;
+    font-size: 16px;
+    color: red;
+  }
+
+  .phone-number-holder {
+    display: flex;
+
+    .react-tel-input {
+      margin-right: 18px;
+      width: auto;
+
+      input {
+        height: 48px;
+        margin-top: 0px !important;
+      }
+
+      .flag-dropdown {
+        height: 34px;
+      }
+    }
+
+    .ui.button.btn-blue {
+      padding: 8px 27px;
+
+      font-family: $gibson;
+      font-size: 15px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+
+      border-radius: 5px;
+    }
+  }
+
+  .code-holder {
+    display: flex;
+    margin-top: 32px;
+
+    button {
+      padding: 0;
+      margin: 0;
+
+      font-size: 16px;
+      font-weight: 400;
+      color: $link-color;
+
+      background: transparent;
+
+      transition: all 0.2s ease-in-out;
+
+      @include on-event {
+        background: transparent;
+      }
+
+      &:first-of-type {
+        position: relative;
+
+        margin-right: 15px;
+
+        &:before {
+          content: '';
+
+          position: absolute;
+          top: -3px;
+          right: calc(-15px);
+
+          width: 1px;
+          height: 25px;
+
+          background-color: $gray300;
+        }
+      }
+
+      &:last-of-type {
+        margin-left: 15px;
+
+        color: $gray150;
+
+        @include on-event {
+          color: $link-color;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 775px) {
+  .call-routing {
+    .call-title-holder {
+      p {
+        font-size: 14px !important;
+      }
+    }
+    button {
+      font-size: 14px;
+    }
+    .call-routing-content {
+      h3 {
+        font-size: 14px !important;
+      }
+      .phone-number-holder {
+        flex-direction: column;
+        .react-tel-input {
+          margin-right: 0px;
+          .form-control {
+            width: 270px;
+          }
+        }
+        .ui.button.btn-blue {
+          margin-right: 0px !important;
+          margin-top: 10px;
+        }
+      }
+      .code-holder {
+        button {
+          margin-right: 0px !important;
+        }
+        button:nth-child(2) {
+          padding-left: 10px;
+        }
+      }
+    }
+    .quicksetup-footer {
+      padding: 16px 20px;
+      button {
+        margin-right: 0px !important;
+      }
+    }
+  }
+}
+@include respond-to(md) {
+  .call-routing {
+    button {
+      font-size: 14px !important;
+    }
+    .call-title-holder {
+      p {
+        font-size: 14px !important;
+      }
+    }
+    .call-routing-content {
+      h3 {
+        font-size: 14px !important;
+      }
+      p {
+        font-size: 14px !important;
+      }
+    }
+    .quicksetup-footer {
+      padding: 16px 20px;
+      button {
+        margin-right: 0px !important;
+      }
+    }
+  }
+}
+
+// =========== mention editor CSS
+
+.mentions {
+  margin: 1em 0;
+}
+
+.mentions--singleLine .mentions__control {
+  display: inline-block;
+}
+.mentions--singleLine .mentions__higlighter {
+  padding: 1px;
+  border: 2px inset transparent;
+}
+.mentions--singleLine .mentions__input {
+  padding: 5px;
+
+  border: 2px inset;
+}
+
+.mentions--multiLine .mentions__control {
+  border: 1px solid silver;
+}
+.mentions--multiLine .mentions__highlighter {
+  padding: 9px;
+}
+.mentions--multiLine .mentions__input {
+  padding: 9px;
+
+  min-height: 63px;
+  outline: 0;
+  border: 0;
+}
+
+.mentions__suggestions__list {
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.mentions__suggestions__item {
+  padding: 5px 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.mentions__suggestions__item--focused {
+  background-color: #cee4e5;
+}
+
+.mentions__mention {
+  box-sizing: border-box;
+  padding: 5px 0px 2px 0px;
+  text-align: center;
+
+  background-color: #cee4e5;
+}
+.mentions__control {
+  height: 110px;
+  font-size: 16px !important;
+  font-family: 'Gibson Regular';
+}

@@ -1,0 +1,1036 @@
+.ui.small.modal-wrapper.manageTeamModal.basic.modal.transition.visible.active {
+  width: auto;
+  height: auto;
+  overflow: visible;
+  .ui.selection.dropdown .menu > .item .text {
+    padding: 0.78571429em 2.1em 0.78571429em 1em !important;
+  }
+  .ui.selection.dropdown .menu .item:first-child span.text {
+    padding: 0.78571429em 2.1em 0.78571429em 1em !important;
+  }
+  .content {
+    .modal-input-wrapper {
+      justify-content: space-between !important;
+    }
+  }
+  .modal-input-wrapper.dropdown {
+    .ui.selection.dropdown {
+      background: #f4f4f4;
+      margin: 0 6px;
+      width: 60%;
+    }
+  }
+  .modal-input-wrapper.AccountStatus {
+    .radio {
+      display: flex;
+      .ui.radio.checkbox {
+        padding: 0 25px;
+      }
+    }
+  }
+}
+
+.ui.page.modals.dimmer.transition.visible.active{
+  .confirm-upgrade-planModal-container {
+    .header{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    p{
+      margin: 0;
+    }
+  }
+}
+.ui.small.modal-wrapper.basic.modal.transition.visible.active {
+  width: 26%;
+
+  background: #ffffff;
+}
+.ui.mini.basic.modal.transition.visible.active.modal-wrapper.modal-email-validation {
+  width: 32%;
+  .content {
+    .modal-input-wrapper {
+      .input-wrapper {
+        .ui.input.input-undefined.modal-input {
+          width: 100% !important;
+          input {
+            margin: 0px 40px;
+            width: 84%;
+          }
+        }
+      }
+    }
+  }
+}
+.modal-wrapper {
+  button.btn-style.btn-blue {
+    margin-right: 0px !important;
+  }
+}
+.modal-wrapper.modal-email-validation {
+  width: 27% !important;
+  .content {
+    .actions.modal-button-wrapper {
+      padding-right: 0px !important;
+    }
+  }
+}
+.confirmBox-wrapper {
+  max-width: 366px !important;
+  .actions {
+    button:nth-child(2) {
+      margin-right: 0px !important;
+      background-color: #1071eb;
+    }
+    button:nth-child(1) {
+      margin-right: 10px !important;
+    }
+  }
+}
+.ui.modal > .close {
+  color: #000;
+}
+
+.ui.basic.modal > .header.modal-header {
+  padding-bottom: 0;
+
+  font-family: $lato;
+  font-weight: 600;
+  color: $black;
+  font-size: 16px !important;
+  border: none;
+}
+
+.modal-input-text {
+  padding-left: 10px;
+  margin: 0;
+
+  font-family: $gibson;
+  font-weight: 400;
+  color: #000000;
+}
+
+.modal-input-wrapper {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+
+  .header.modal-header {
+    font-size: 16px !important;
+  }
+  .ui.modal-input {
+    width: 100% !important;
+
+    input {
+      background: $gray100;
+      border: none;
+      margin: 0 56px;
+    }
+  }
+}
+.modal-input-wrapper.add-team-modal {
+  .input-wrapper {
+    width: 100%;
+    .ui.modal-input-style {
+      width: 100%;
+    }
+  }
+}
+.modal-radio-wrapper {
+  .heading-wrapper {
+    display: flex;
+  }
+  .button-wrapper {
+    label {
+      padding: 0 20px;
+    }
+    .ui.radio.checkbox:nth-child(1) {
+      margin-left: 20px;
+    }
+  }
+}
+.actions.modal-button-wrapper {
+  margin-bottom: 17px;
+  margin-right: 0;
+
+  text-align: left !important;
+
+  border: none !important;
+  .ui.modal .actions > .button {
+    margin-right: 0px !important;
+  }
+  .ui.modal > .actions {
+    padding: 10px 0rem;
+  }
+  button {
+    margin-left: 0px !important;
+  }
+}
+.edit-team-info {
+  .actions.modal-button-wrapper {
+    button.ui.button.btn-blue.btn-modal-style {
+      padding: 10px 0px;
+      border-radius: 4px;
+      font-size: 16px !important;
+    }
+  }
+}
+
+.create-new-team-popup {
+  .ui.button.btn-blue.btn-modal-style {
+    padding: 10px 0px !important;
+
+    font-size: 16px;
+  }
+}
+
+//modal2
+
+.ui.small.modal2-wrapper.basic.modal.transition.visible.active {
+  padding: 0 35px;
+  width: 560px;
+
+  background: #ffffff;
+
+  transform: translate(7%, 4%) !important;
+  .content {
+    padding: 0px !important;
+  }
+  .modal-header {
+    padding: 1.25rem 0;
+
+    letter-spacing: 1px;
+  }
+  .modal-button-wrapper {
+    padding: 0px;
+    float: right;
+    padding-right: 0px !important;
+  }
+  .content {
+    padding: 1.5rem 0;
+  }
+
+  .actions.modal-button-wrapper button {
+    margin-top: 13px;
+  }
+
+  .modal-checkbox-wrapper {
+    display: flex;
+
+    i {
+      padding: 8px 6px !important;
+    }
+
+    .form {
+      display: flex;
+
+      .field {
+        margin-right: 10px !important;
+      }
+    }
+
+    .holder-checkbox {
+      margin-right: 15px;
+
+      .ui.checkbox label {
+        padding-left: 30px;
+      }
+    }
+
+    .ui.selection.dropdown {
+      padding: 7px 7px;
+      width: 200px !important;
+    }
+  }
+}
+
+.ui.modal-input-style {
+  width: 100%;
+
+  input {
+    width: 100%;
+
+    border: 1px solid $gray100;
+
+    &::placeholder {
+      padding-left: 10px;
+
+      font-size: 16px;
+      font-weight: 400;
+      text-transform: capitalize;
+    }
+  }
+}
+
+.ui.dimmmer {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+//mini
+.ui.mini.modal {
+  background: #fff;
+}
+.ui.mini.modal.crate-team {
+  background: #fff;
+  .content {
+    span {
+      color: red;
+    }
+  }
+}
+
+.ui.mini.modal.mini-modal {
+  bottom: 70px;
+  left: 99px;
+
+  margin: 0;
+  width: 282px;
+
+  .content {
+    padding: 1.9rem;
+  }
+}
+
+.hours-call-holder {
+  padding: 7px 0;
+
+  img {
+    width: 16px;
+    height: 17px;
+  }
+
+  &:first-child a p.hours-title {
+    margin-left: 29px;
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+
+    color: $black;
+    text-decoration: none;
+
+    p.hours-title {
+      margin-left: 29px;
+
+      font-size: 18px;
+      font-weight: 300;
+
+      &:hover {
+        color: $link-color;
+
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+      }
+    }
+  }
+}
+
+//profile modal
+.ui.mini.modal.transition.visible.active.mini-profile {
+  bottom: 25px;
+  left: 107px;
+
+  width: 258px;
+
+  .content {
+    padding: 0;
+  }
+
+  .profile-link-text {
+    margin: 0;
+
+    font-size: 17px;
+    color: #5c5656;
+  }
+
+  .profile-link-wrapper {
+    padding: 19px 30px;
+  }
+
+  .profile-link-wrapper .link-holder:nth-child(2) {
+    p {
+      margin-top: 3px;
+    }
+  }
+
+  .profile-avatar-holder {
+    margin-right: 14px;
+  }
+
+  .profile-content-wrapper {
+    display: flex;
+    align-items: center;
+    padding-top: 21px;
+    padding-right: 20px;
+    padding-left: 20px;
+
+    border-top: 1px solid $gray100;
+
+    .profile-name {
+      margin-bottom: 0;
+
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    .profile-email {
+      margin-bottom: 7px;
+      overflow-wrap: anywhere;
+      font-size: 12px;
+
+      &:hover {
+        color: $link-color;
+
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+      }
+    }
+
+    .edit-profile {
+      font-size: 12px;
+      color: $link-color;
+      cursor: pointer;
+
+      a {
+        text-decoration: none;
+
+        &:hover {
+          color: $black;
+          cursor: pointer;
+          transition: all 0.2s ease-in-out;
+        }
+      }
+    }
+  }
+
+  .ui.modal .actions > .button {
+    margin-left: 10px;
+    width: 30%;
+  }
+
+  .profile-plan-wrapper {
+    padding-top: 21px;
+    padding-left: 20px;
+
+    .plan-avail {
+      margin-bottom: 0;
+
+      font-size: 16px;
+    }
+
+    .plan-expiration {
+      font-size: 12px;
+    }
+
+    .manage-profile {
+      font-size: 12px;
+      color: $link-color;
+      cursor: pointer;
+
+      a {
+        text-decoration: none;
+
+        &:hover {
+          color: $black;
+          cursor: pointer;
+          transition: all 0.2s ease-in-out;
+        }
+      }
+    }
+  }
+
+  .sign-out-wrapper {
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+
+    .sign-out-text-holder {
+      margin-left: 12px;
+    }
+
+    .sign-out-text {
+      font-size: 16px;
+
+      cursor: pointer;
+
+      &:hover {
+        color: $link-color;
+
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+      }
+    }
+  }
+}
+
+//getstarted mod
+.ui.getstarted-modal {
+  top: 109px;
+
+  width: 812px;
+
+  background: $white;
+
+  .content {
+    padding: 0;
+  }
+
+  .getstarted-banner-wrapper {
+    display: flex;
+    padding: 64px 64px 31px;
+
+    background: $gray100;
+
+    .getstarted-banner-holder {
+      position: relative;
+
+      flex-basis: 50%;
+    }
+
+    .getstarted-banner-title {
+      margin-top: 7px;
+
+      font-family: $gibson;
+      font-size: 50px;
+      font-weight: 400;
+      color: $black;
+    }
+
+    .getstarted-banner-text-holder {
+      display: flex;
+      align-items: center;
+      margin-top: 18px;
+
+      .getstarted-banner-text {
+        margin-left: 12px;
+
+        font-size: 20px;
+        color: $gray300;
+      }
+    }
+
+    .getstarted-banner-img-box {
+      position: absolute;
+      left: 106px;
+    }
+  }
+
+  .getstarted-content-wrapper {
+    padding: 42px 67px;
+
+    cursor: pointer;
+
+    .getstarted-content-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0;
+
+      font-size: 20px;
+      color: $link-color;
+
+      img.title-arrow {
+        margin-left: 10px;
+      }
+
+      .arrowOpacity {
+        opacity: 0.3;
+      }
+
+      &:hover {
+        color: $black;
+
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+      }
+    }
+
+    .getstartedInActive {
+      color: $gray300 !important;
+    }
+
+    .getstarted-content-desc {
+      margin-left: 36px;
+    }
+
+    img.circle-check {
+      margin-right: 10px;
+    }
+
+    .getstarted-content-holder {
+      margin-bottom: 35px;
+    }
+  }
+}
+
+@media #{$smallDesktop} {
+  .ui.getstarted-modal .getstarted-banner-wrapper .getstarted-banner-title {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1440px) {
+  .ui.button.btn-blue.btn-modal-style {
+    font-size: 16px;
+  }
+
+  .ui.getstarted-modal {
+    .getstarted-banner-wrapper
+      .getstarted-banner-text-holder
+      .getstarted-banner-text {
+      font-size: 16px;
+    }
+
+    .getstarted-content-wrapper {
+      .getstarted-banner-text-holder .getstarted-banner-text {
+        font-size: 16px;
+      }
+
+      .getstarted-content-item {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .ui.mini.modal.mini-modal,
+  .ui.mini.modal.transition.visible.active.mini-profile {
+    left: 75px;
+  }
+}
+
+.create-team-button {
+  margin-right: 0px !important;
+}
+
+.ui.basic.modal.modal2-wrapper > .header.modal-header {
+  padding: 1.25rem 0 !important;
+}
+
+.ui.modal > .header {
+  padding: 1.25rem 2rem !important;
+}
+.ui.modal > .content {
+  padding: 20px 20px 20px 20px;
+}
+.create-new-team-popup {
+  button.ui.button.btn-gray.btn-modal-style {
+    font-size: 16px !important;
+  }
+}
+.ui.small {
+  .modal-wrapper {
+    .basic {
+      .modal {
+        .transition {
+          .visible {
+            .active {
+              .content {
+                padding: 20px 20px 20px 5px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.edit-team-info {
+  .actions.modal-button-wrapper {
+    float: right !important;
+  }
+}
+
+.edit-team-info button.ui.button.btn-grey.undefined {
+  font-size: 16px !important;
+}
+
+.activeComponent-wrapper
+  .manage-teammates-wrapper
+  .ui[class*='left icon'].input
+  > input {
+  padding: 10px !important;
+  .confirmBox-wrapper .actions button.ui.primary.button {
+    width: 29%;
+  }
+}
+
+.confirmBox-wrapper .actions {
+  padding-right: 22px !important;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .confirmBox-wrapper {
+    max-width: 300px !important;
+  }
+  .ui.page.modals.dimmer.transition.visible.active {
+    .confirmBox-wrapper .actions {
+      padding-right: 22px !important;
+    }
+  }
+  .create-new-team-popup {
+    button.ui.button.btn-gray.btn-modal-style {
+      padding: 0px 10px;
+      font-size: 13px !important;
+    }
+  }
+  .modal-input-wrapper .ui.modal-input input {
+    margin: 0px;
+  }
+  .ui.small.modal-wrapper.manageTeamModal.basic.modal.transition.visible.active {
+    width: 100% !important;
+    max-width: 95%;
+    .modal-input-wrapper.dropdown {
+      .ui.selection.dropdown {
+        width: 100%;
+      }
+    }
+    .actions.modal-button-wrapper button.ui.button.btn-grey.undefined {
+      padding: 0px 20px !important;
+    }
+    .ui.modal .actions > .button {
+      margin-bottom: 0rem !important;
+    }
+    .ui.checked.radio.checkbox label {
+      padding-left: 20px;
+      padding-right: 10px;
+    }
+    .content {
+      .modal-input-wrapper {
+        justify-content: space-between !important;
+        display: block;
+        padding: 0px;
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+.modal-wrapper .modal-button-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.content .modal-radio-wrapper {
+  padding: 16px 0 16px 0;
+}
+
+.modal-input-wrapper .modal-input input[type='text'] {
+  width: 100%;
+}
+
+.manageTeamModal .modal-input-wrapper .modal-input input[type='text'] {
+  width: 100% !important;
+}
+
+.ui.basic.modal > .header {
+  color: #000;
+}
+
+.actions.modal-button-wrapper {
+  button.ui.button.btn-blue.btn-modal-style {
+    width: 89.48px;
+    justify-content: center;
+  }
+  button.ui.button.btn-grey.undefined {
+    margin: 0 !important;
+  }
+  padding-right: 33px !important;
+}
+
+.manageTeamModal {
+  .actions.modal-button-wrapper {
+    button.ui.button.btn-blue.btn-modal-style {
+      margin-bottom: 0px !important;
+    }
+  }
+}
+
+.edit-team-info {
+  .modal-input-wrapper {
+    p.modal-input-text.default-text {
+      padding-right: 15px;
+    }
+    .input-wrapper {
+      .modal-input {
+        input[type='text'] {
+          margin: 0;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .edit-team-info {
+    width: 320px !important;
+    .actions.modal-button-wrapper {
+      button.ui.button {
+        margin: 0;
+      }
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .edit-team-info {
+    width: 290px !important;
+    .actions.modal-button-wrapper {
+      button.ui.button {
+        margin: 0;
+      }
+    }
+  }
+}
+
+@include respond-to(md) {
+  .ui.small.modal-wrapper.manageTeamModal.basic.modal.transition.visible.active {
+    width: auto;
+  }
+  .ui.small.modal2-wrapper.basic.modal.transition.visible.active {
+    width: 60%;
+  }
+}
+@include respond-to(sm) {
+  .ui.small.modal-wrapper.manageTeamModal.basic.modal.transition.visible.active {
+    width: 70%;
+  }
+  .ui.small.modal2-wrapper.basic.modal.transition.visible.active {
+    width: 67%;
+    .actions.modal-button-wrapper {
+      .ui.modal > .actions {
+        padding: 1rem 0rem 0 !important;
+      }
+    }
+  }
+}
+@include respond-to(xs) {
+  .ui.small.modal2-wrapper.basic.modal.transition.visible.active {
+    width: 95%;
+    margin: 0 40px 0 0;
+    .content {
+      .modal-input-wrapper {
+        align-items: end;
+        flex-direction: column;
+        .input-wrapper {
+          min-width: 100%;
+          .ui.input.input-undefined.modal-input {
+            input {
+              margin: 0px;
+            }
+          }
+        }
+      }
+      .actions.modal-button-wrapper {
+        button {
+          width: 100%;
+        }
+      }
+      .modal-input-wrapper.add-team-modal {
+        width: 100% !important;
+      }
+    }
+  }
+}
+@include respond-to(md) {
+  .ui.mini.basic.modal.transition.visible.active.modal-wrapper.modal-email-validation {
+    width: 50%;
+    .content {
+      .modal-input-wrapper {
+        align-items: end;
+        flex-direction: column;
+        .input-wrapper {
+          min-width: 100%;
+          .ui.input.input-undefined.modal-input {
+            input {
+              margin: 0px;
+            }
+          }
+        }
+      }
+      .actions.modal-button-wrapper {
+        button {
+          width: 100%;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}
+@include respond-to(lg) {
+  .ui.mini.basic.modal.transition.visible.active.modal-wrapper.modal-email-validation {
+    width: 40%;
+    .content {
+      .modal-input-wrapper {
+        .input-wrapper {
+        }
+      }
+    }
+  }
+}
+
+.edit-team-info .actions.modal-button-wrapper {
+  justify-content: left;
+  padding-left: 32px;
+}
+.modal {
+  top: unset !important;
+  left: unset !important;
+  height: unset !important;
+}
+
+.manageTeamModal {
+  .actions.modal-button-wrapper {
+    width: 300px;
+    margin-left: auto;
+    justify-content: flex-start;
+    margin-right: 20px;
+    padding-left: 0;
+  }
+  .content {
+    .modal-input-wrapper {
+      .ui.selection.dropdown {
+        margin: 0 !important;
+        width: 50% !important;
+      }
+      .radio_button_fixed {
+        display: flex;
+        width: 300px;
+        .checkbox {
+          padding: 7px 0px 0px 60px;
+        }
+      }
+      .input-wrapper {
+        .modal-input {
+          input {
+            margin: 0;
+            width: 300px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.modal {
+  top: unset !important;
+  left: unset !important;
+  height: unset !important;
+}
+.manageTeamModal .content .modal-input-wrapper .selection.dropdown.manageteam {
+  width: 60% !important;
+}
+.manageTeamModal .content .modal-input-wrapper .input-wrapper {
+  width: 60% !important;
+}
+.manageTeamModal .actions.modal-button-wrapper {
+  margin-right: 0;
+  padding-left: 33px;
+  justify-content: flex-end;
+}
+.manageTeamModal {
+  width: 26% !important;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .manageTeamModal {
+    width: 50% !important;
+  }
+  .manageTeamModal {
+    .content {
+      .modal-input-wrapper {
+        .radio_button_fixed {
+          width: 190px;
+          .checkbox {
+            padding: 0 0px 0px 4px;
+          }
+        }
+        .input-wrapper {
+          .modal-input {
+            input {
+              width: 190px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .manageTeamModal {
+    width: 54% !important;
+    .content {
+      .modal-input-wrapper {
+        .radio_button_fixed {
+          width: 219px;
+          .checkbox {
+            padding: 0 0px 0px 4px;
+          }
+        }
+        .input-wrapper {
+          .modal-input {
+            input {
+              width: 219px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .manageTeamModal {
+    width: 90% !important;
+    .actions.modal-button-wrapper {
+      width: 180px;
+    }
+    .content {
+      .modal-input-wrapper {
+        .ui.selection.dropdown {
+          width: 100% !important;
+        }
+        .radio_button_fixed {
+          width: 180px;
+        }
+        .input-wrapper {
+          .modal-input {
+            input {
+              width: 180px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.modal {
+  top: unset !important;
+  left: unset !important;
+  height: unset !important;
+}
+
+.nav_mini_profile {
+  left: 107px !important;
+
+  font-family: 'Gibson regular';
+}
+
+@media (min-width: 320px) and (max-width: 575px) {
+  .nav_mini_profile {
+    left: 60px !important;
+  }
+  .manageTeamModal .content .modal-input-wrapper .input-wrapper {
+    width: 100% !important;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .nav_mini_profile {
+    left: 70px !important;
+  }
+  .manageTeamModal .content .modal-input-wrapper .input-wrapper {
+    width: 100% !important;
+  }
+}

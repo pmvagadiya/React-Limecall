@@ -1,0 +1,145 @@
+.title-container {
+  position: fixed;
+  top: 0;
+  left: 64px;
+  right: 0;
+  z-index: 5;
+  padding: 15px 30px 15px;
+  // height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: $white;
+  box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.1);
+
+  .title-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .img-icon {
+    margin-right: 10px;
+  }
+  .meets-button {
+    a {
+      padding: 10px;
+      margin: 5px;
+    }
+    // a:nth-child(1){
+    //   background-color:red;
+    //   border-radius: 20px;
+    //   border: none !important;
+    // }
+  }
+  .invoice-select-wrapper {
+    position: absolute;
+    top: 10px;
+    right: 235px;
+    padding-top: 2px;
+    display: flex;
+    align-items: center;
+
+    .saved-filter-text {
+      margin: 0 10px 0 0;
+    }
+
+    .ui.selection.dropdown {
+      position: relative;
+
+      width: 120px;
+      height: 35px;
+      border: 1px solid greu;
+
+      i {
+        display: none;
+      }
+
+      .text {
+        font-size: 16px;
+        color: #399fd0;
+      }
+
+      &:after {
+        content: url(../assets/images/chevron-down.png);
+
+        position: absolute;
+        top: 7px;
+        right: 13px;
+      }
+    }
+  }
+
+  .welcome-name {
+    display: flex;
+    padding-left: 28px;
+
+    .title-one {
+      margin-right: 5px;
+    }
+
+    div {
+      // padding: 24px 0 0;
+
+      font-size: 26px;
+    }
+  }
+
+  .home-card-button {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+a.home-card-button.red {
+  background-color: #4730c7;
+  border-radius: 5px;
+  padding: 13px 28px;
+  &:hover {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+.title-one {
+  font-size: 10px;
+}
+
+.nav-container.custome_nav_bar.billing {
+  top: 0px;
+}
+
+.title-one,
+.title-two {
+  font-family: $gibson;
+  font-size: 20px;
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1440px) {
+  .title-container {
+    // margin-left: 47px;
+
+    .welcome-name .title-one {
+      div {
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+@include respond-to(xs) {
+  .title-container {
+    padding-right: 5px;
+
+    .title-wrapper {
+      width: 50%;
+    }
+
+    .meets-button {
+      a {
+        padding: 10px;
+        margin: 5px;
+      }
+    }
+  }
+}

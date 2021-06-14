@@ -1,0 +1,952 @@
+.numbers-banner-container {
+  background-color: $gray100;
+  // .numbers-banner {
+  //   padding: 50px;
+  //   background-color: $white;
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: space-between;
+  //   .banner-title {
+  //     font-family: "Gibson Regular";
+  //     font-size: 50px;
+  //     font-weight: 500;
+  //   }
+  // }
+  .banner-info-text{    
+    font-size: 16px;
+    width: 100%;
+    margin: 10px 0;
+    flex: none;
+    float: left;
+    display: inline-block;
+  }
+
+  .tab-wrapper {
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .btn-height {
+    height: 20px;
+  }
+
+  .dashboard-wrapper {
+    background: $white;
+  }
+}
+
+.ui.modal > .content {
+  padding: 0px 0px 0px 0px;
+}
+
+.local-number-modal {
+  border-radius: 0 !important;
+}
+
+.confirmBox-wrapper {
+  border-radius: 0 !important;
+}
+
+.ui modal transition visible active local-number-modal {
+  border-radius: 0 !important;
+}
+
+.ui.modal .actions>.button {
+  margin-left: .75em;
+  border-radius: 0;
+}
+
+.link-color {
+  color: blue;
+}
+
+.trial-headline {
+  font-size: 20px;
+}
+
+.add-number-btn {
+  display: flex;
+  margin-bottom: 20px;
+  margin-left: 20px;
+ }
+
+.add-numbercta {
+  height: 30px;
+  margin-right: 10px;
+}
+
+.help-title {
+  font-size: 23px;
+  font-weight: 500;
+}
+
+.help-subtitle {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.help-titlediv {
+  height: 90px;
+}
+
+.help-spantitle {
+  color: #029fad;
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.container-trial {
+  width: 100%;
+}
+
+.view-more {
+  text-align: right;
+  text-decoration: underline;
+  margin-right: 20px;
+  color: #0071eb;
+}
+
+.btn-title {
+font-size:13px;
+text-align: center;
+margin-top: 10px;
+margin-bottom: auto;
+}
+
+ .fontsize-trial {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.add-number {
+  .tab-wrapper {
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+.numbers-banner {
+  display: flex;
+  padding: 50px;
+  margin-top: 10px;
+
+  background: $white;
+}
+
+.trial-big-box {
+  background-color: '#f7f9fd';
+  margin-top: 30;
+  padding-top: 30;
+  padding-bottom: 30;
+  padding-left: 10;
+  padding-right: 10
+}
+
+.trial-box {
+  display: flex;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  background-color: white;
+  -webkit-box-shadow: 3px 3px 3px 3px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow:    3px 3px 3px 3px #ccc;  /* Firefox 3.5 - 3.6 */
+  box-shadow:         3px 3px 3px 3px #ccc;
+}
+
+.submit-trial {
+  background-color:darkgreen ;
+  align-content: 'center';
+  border-radius: 4;
+}
+
+.banner-description-wrapper {
+  margin-left: 5px;
+
+  .banner-title {
+    margin-bottom: 3px;
+
+    font-family: $gibson;
+    font-size: 30px;
+    font-weight: 500;
+  }
+
+  .banner-description {
+    font-family: $gibson;
+    font-size: 17px;
+    font-weight: 300;
+    color: #9a9a9a;
+  }
+}
+
+.img-data {
+  width: 40px;
+  height: 40px;
+  margin-left: -30px;
+}
+
+.table-heading-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.request-demo {
+  display: flex;
+  margin-bottom: 10px;
+  // margin-left: 20px;
+ }
+
+.help-subtitle {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.help-titlediv {
+  height: auto;
+}
+
+.help-spantitle {
+  color: #029fad;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.wrap-text {
+  color: white;
+  font-size: 10px;
+  white-space: nowrap;
+}
+
+.fontize {
+  margin-top: -12px;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.fontsize-label {
+  font-size: 17px;
+  margin-left: 20px;
+  font-weight: 500;
+}
+
+.my-number-tab {
+  padding: 30px;
+
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+
+  .ui.table thead th {
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 16px;
+  }
+
+  .btn-blue {
+    font-weight: 300;
+    text-transform: capitalize;
+
+    &:hover {
+      color: $link-color !important;
+
+      background: transparent !important;
+    }
+  }
+
+  table {
+    tr {
+      font-weight: 300;
+
+      cursor: pointer;
+
+      &:hover {
+        border: 1px solid #286efa;
+      }
+    }
+  }
+}
+
+.local-number-wrap {
+  padding: 50px 0;
+
+  .btn-blue {
+    font-weight: 300;
+    text-transform: capitalize;
+
+    &:hover {
+      color: $link-color !important;
+
+      background: transparent !important;
+    }
+  }
+
+  p {
+    margin-right: 0;
+  }
+
+  .local-number-header {
+    display: flex;
+    align-items: center;
+
+    > * {
+      margin-right: 20px;
+    }
+
+    p {
+      width: 20%;
+      margin-bottom: 0;
+
+      font-size: 14px;
+      letter-spacing: 1px;
+    }
+
+    .ui.selection.dropdown {
+      min-width: 150px;
+      width: 50%;
+
+      &:nth-of-type(2) {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .ui.table thead th {
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+}
+
+.local-number-modal {
+  width: 470px !important;
+  max-width: 100%;
+  .modal-content {
+    text-align: center;
+
+    p {
+      font-size: 18px;
+    }
+
+    > button {
+      &:last-child {
+        background-color: $red;
+        border: 1px solid $red;
+      }
+    }
+  }
+}
+
+.configure-wrapper {
+  padding: 30px;
+
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+
+  .campaign-sec {
+    padding: 25px;
+
+    .input-wrapper {
+      margin-top: 10px;
+      > label {
+        margin-right: 15px;
+      }
+    }
+
+    p {
+      font-family: 'Gibson Regular';
+      font-size: 20px;
+      font-weight: 400;
+      color: #000000;
+      margin: 0;
+    }
+
+    .PhoneInput {
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      padding: 5px 15px;
+      max-width: 250px;
+      background: #fff;
+
+      .PhoneInputInput {
+        border: 0;
+      }
+    }
+
+    .toggle-group {
+      .toggle-content {
+        h3 {
+          font-size: 18px;
+        }
+      }
+      margin-bottom: 0;
+      margin-top: 20px;
+    }
+    span.company-subtitle {
+      color: #ccc;
+    }
+
+    .btn-add-number {
+      display: flex;
+      padding: 0;
+      align-items: center;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      font-family: 'Gibson Regular';
+      font-size: 16px;
+      font-weight: 400;
+      color: #0071eb;
+      background: transparent;
+
+      img {
+        margin-right: 10px;
+      }
+    }
+
+    .assing_opt {
+      width: 75%;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+      label {
+        font-size: 18px;
+      }
+      .ui.fluid.selection.dropdown {
+        width: 42%;
+      }
+      .react-tel-input {
+        width: 63%;
+        .flag-dropdown {
+          height: 35px;
+        }
+        input.form-control {
+          margin-top: 0 !important;
+        }
+      }
+    }
+    .user_assing_btn {
+      margin-top: 20px;
+      text-align: right;
+      width: 75%;
+    }
+  }
+  .text-right {
+    text-align: right;
+  }
+  .ui.button.btn-blue.btn-delete {
+    background-color: #ec1d25;
+    border: 1px solid #ec1d25;
+  }
+}
+
+.greeting-check {
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  width: 400px;
+  padding: 20px 0;
+
+  .ui.selection.dropdown {
+    width: 100%;
+  }
+}
+
+.automation-wrapper {
+  padding: 30px;
+
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+
+  .ui.checkbox {
+    margin-bottom: 15px;
+    label {
+      padding-left: 25px;
+
+      font-size: 18px;
+      font-weight: 400;
+    }
+  }
+
+  p {
+    font-family: 'Gibson Regular';
+    font-size: 20px;
+    font-weight: 400;
+    color: #000000;
+  }
+
+  .automation-check {
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    width: 800px;
+    padding: 20px 0;
+
+    > * {
+      flex: 0 0 50%;
+      max-width: 50%;
+      margin: 0 15px;
+    }
+  }
+}
+
+.call-log-wrapper {
+  padding: 25px;
+
+  .ui.table thead th {
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .day-filter {
+    text-align: right;
+    margin-bottom: 20px;
+  }
+
+  .call-log-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .coll-log-filter {
+      display: flex;
+      align-items: center;
+
+      > div {
+        margin: 0 10px;
+        &:last-child {
+          margin: 0;
+        }
+      }
+
+      .input-wrapper {
+        .ui.input > input {
+          padding: 0.3em 1em;
+          border-radius: 0;
+        }
+        i {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and(min-width: 1200px) and (max-width: 1440px) {
+  .numbers-banner-container {
+    .numbers-banner {
+      .banner-title {
+        font-size: 40px;
+      }
+    }
+  }
+}
+
+@media only screen and(max-width: 1440px) {
+  .number-container {
+    padding-left: 60px;
+    margin: auto;
+    width: calc(100% - 75px) !important;
+  }
+}
+
+@include respond-to(md-down) {
+  .number-container {
+    width: calc(100% - 50px);
+
+    .numbers-banner {
+      padding: 30px 0;
+    }
+
+    .add-number {
+      .numbers-banner {
+        h1 {
+          font-size: 20px;
+        }
+      }
+    }
+
+    .numbers-banner-container {
+      .dashboard-wrapper {
+        .tab-wrapper {
+          overflow: auto;
+          padding: 0;
+
+          .activeComponent-wrapper {
+            .my-number-tab {
+              width: 1000px;
+            }
+
+            .local-number-wrap {
+              padding: 30px;
+
+              .local-number-header {
+                p {
+                  width: 45%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include respond-to(sm-down) {
+  .local-number-wrap {
+    .local-number-header {
+      button.ui.button.btn-blue.undefined {
+        width: 100%;
+        margin: 0 !important;
+        max-width: 100%;
+      }
+    }
+  }
+  .number-container {
+    padding-left: 55px;
+    margin: auto;
+    width: calc(100% - 10px) !important;
+
+    .add-number {
+      .numbers-banner {
+        h1 {
+          font-size: 20px;
+        }
+      }
+
+      .dashboard-wrapper {
+        padding: 0 10px;
+
+        .tab-wrapper {
+          padding: 0 10px !important;
+        }
+      }
+    }
+
+    .numbers-banner-container {
+      .numbers-banner {
+        flex-wrap: wrap;
+        padding: 30px;
+
+        .banner-icon {
+          margin-left: 5px;
+        }
+      }
+
+      .dashboard-wrapper {
+        .tab-wrapper {
+          padding: 0 10px;
+        }
+
+        .activeComponent-wrapper {
+          .my-number-tab {
+            width: 100% !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include respond-to(xs) {
+  .number-container {
+    .title-container {
+      padding-right: 5px;
+
+      .title-wrapper {
+        width: 50%;
+
+        .title-two {
+          font-size: 15px;
+        }
+      }
+
+      .home-card-button {
+        padding: 10px;
+      }
+    }
+
+    .add-number {
+      .dashboard-wrapper {
+        padding: 0;
+
+        .tab-wrapper {
+          padding: 0 10px !important;
+
+          .innertab-wrapper {
+            flex-wrap: wrap;
+
+            .innertab-item {
+              width: 100%;
+            }
+          }
+
+          .activeComponent-wrapper {
+            .local-number-wrap {
+              padding: 10px 0;
+
+              .local-number-header {
+                flex-wrap: wrap;
+
+                p {
+                  width: 100%;
+                  margin-bottom: 10px;
+                }
+
+                .ui.selection.dropdown {
+                  margin-right: 0;
+                  margin-bottom: 10px;
+                  width: 100%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .numbers-banner-container {
+      .title-container {
+        display: none;
+      }
+
+      .numbers-banner {
+        padding: 30px 0;
+      }
+
+      .dashboard-wrapper {
+        .tab-wrapper {
+          overflow: hidden;
+          padding: 0;
+
+          .my-number-tab {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 30px 10px;
+
+            .ui.dropdown {
+              width: 100%;
+            }
+
+            a {
+              margin-top: 15px;
+              width: 100%;
+
+              button {
+                width: 100%;
+              }
+            }
+          }
+
+          .innertab-item {
+            width: 45%;
+          }
+
+          .configure-wrapper {
+            padding: 30px 10px;
+
+            .campaign-sec {
+              padding: 25px 0;
+
+              p {
+                margin-bottom: 5px;
+
+                font-size: 16px;
+              }
+
+              h3 {
+                font-size: 16px;
+              }
+
+              label {
+                display: none;
+              }
+
+              input {
+                width: 100%;
+              }
+            }
+
+            .text-right {
+              text-align: center;
+
+              .btn-delete {
+                margin-bottom: 10px;
+                width: 100%;
+              }
+
+              .btn-blue {
+                width: 100%;
+              }
+            }
+          }
+
+          .automation-wrapper {
+            padding: 10px;
+
+            .holder-checkbox {
+              label {
+                padding-left: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.settings {
+  .configure-wrapper {
+    .general-content-holder-right {
+      display: flex;
+      align-items: center;
+      margin: 10px 0px;
+      width: 75%;
+      justify-content: space-between;
+      .input-wrapper {
+        margin-top: 0;
+      }
+    }
+  }
+}
+@media (min-width: 320px) and (max-width: 575px) {
+  .request-demo {
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-left: 20px;
+   }
+
+   .help-title {
+    margin-left: 10px;
+   font-size: 20px;
+   font-weight: 600;
+  }
+
+   .fontsize-trial {
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 20px;
+  }
+
+   .add-number-btn {
+    display: inline-block;
+    margin-bottom: 10px;
+   }
+
+   .trial-headline {
+     margin-top: 25px !important;
+    font-size: 15px;
+  }
+
+   .btn-title {
+  margin-top: 10px;
+  font-size:13px;
+  }
+
+  .manage_number_main {
+    .manage_table {
+      .table {
+        .number_button {
+          button {
+            margin-right: 0 !important;
+          }
+        }
+      }
+      .table-heading-wrapper {
+        width: 100%;
+        button {
+          padding: 10px 6px;
+        }
+        a {
+          margin-top: 0 !important;
+        }
+      }
+    }
+  }
+}  
+@media (min-width:992px) and (max-width:1199px){
+	.settings{
+		.tab-wrapper{
+			.manage_table{
+				table.ui.table{
+					tbody{
+						.number_button{
+						display: flex;
+						}
+					}
+				}
+			}
+		}
+	}
+
+  .request-demo {
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-left: 20px;
+   }
+
+  .fontsize-trial {
+    margin-bottom: 20px;
+ }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .settings {
+    .configure-wrapper {
+      .general-content-holder-right {
+        width: calc(75% + 162px);
+        .audio-controls {
+          audio {
+            width: 241px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .settings {
+    .configure-wrapper {
+      .general-content-holder-right {
+        display: block;
+        .audio-controls {
+          margin-top: 15px;
+          audio {
+            width: 231px;
+          }
+        }
+      }
+    }
+  }
+  .manage_number_main {
+    .settings {
+      .mobile_side_menu.null {
+        display: none;
+      }
+    }
+  }
+  .add_number_inner {
+    background: #fff;
+    .settings {
+      .mobile_side_menu.null {
+        display: none;
+      }
+      .tab-wrapper .innertab-wrapper {
+        display: block;
+      }
+    }
+  }
+
+  .request-demo {
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-left: 20px;
+   }
+}

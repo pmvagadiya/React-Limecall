@@ -1,0 +1,145 @@
+.sky-blue {
+  background: $link-color;
+  border: 1px solid $link-color !important;
+
+  @include on-event {
+    padding: 10px 40px;
+
+    color: $white;
+
+    background: $btn-blue-hover;
+    border: 1px solid $btn-blue-hover !important;
+
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+}
+
+.ui.button {
+  padding: 10px 20px;
+  font-family: 'Open Sans', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono',
+    'Monaco', monospace;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
+
+  &.btn-transparent {
+    background-color: transparent;
+    border: 1px solid $gray100;
+    border-radius: 0;
+  }
+
+  &.btn-blue {
+    color: $white;
+
+    background-color: $link-color;
+    border: 1px solid $link-color;
+    border-radius: 0;
+
+    transition: all 0.3s ease-in-out;
+
+    @include on-event {
+      color: $white;
+
+      background: $btn-blue-hover;
+      border: 1px solid $btn-blue-hover;
+
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+    }
+  }
+
+  &.btn-grey {
+    padding: 10px 20px;
+
+    color: $black;
+
+    background-color: $gray100;
+    border: 1px solid $gray100;
+    border-radius: 0;
+
+    transition: all 0.3s ease-in-out;
+
+    @include on-event {
+      color: $black;
+
+      background: $white;
+      border: 1px solid $gray100;
+
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+    }
+  }
+
+  &.btn-alt-blue {
+    padding: 9px 23px;
+
+    color: $link-color;
+
+    background-color: transparent;
+    border: 1px solid $link-color;
+    border-radius: 0;
+
+    transition: all 0.3s ease-in-out;
+
+    @include on-event {
+      color: $white;
+
+      background: $link-color;
+
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+    }
+  }
+
+  &.btn-green {
+    color: $white;
+
+    background-color: $green;
+    border: 1px solid transparent;
+    border-radius: 0;
+
+    transition: all 0.3s ease-in-out;
+
+    @include on-event {
+      color: $white;
+
+      background: $btn-green-hover;
+      border: 1px solid $green;
+
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+    }
+  }
+
+  &.btn-white {
+    color: $black;
+
+    background-color: $white;
+    border: 1px solid $gray100;
+    border-radius: 0;
+
+    transition: all 0.3s ease-in-out;
+
+    @include on-event {
+      color: $white;
+
+      background: $black;
+      border: 1px solid $black;
+
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1440px) {
+  .ui.button {
+    font-size: 16px;
+
+    &.btn-alt-blue {
+      font-size: 12px;
+    }
+  }
+}

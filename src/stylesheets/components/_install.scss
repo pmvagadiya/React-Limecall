@@ -1,0 +1,133 @@
+.install {
+  background-color: $white;
+
+  .install-title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 20px 14px;
+
+    border-bottom: 1px solid $gray100;
+
+    .install-title {
+      margin-bottom: 0;
+
+      font-family: $gibson;
+      font-size: 24px;
+      font-weight: 600;
+    }
+
+    .install-sub-title {
+      font-family: $gibson;
+      font-size: 19px;
+      font-weight: 300;
+
+      a {
+        color: $link-color;
+      }
+    }
+  }
+
+  .collapse {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .collapse-header {
+      // margin-bottom: 11px;
+      margin: 0;
+
+      i {
+        margin-right: 16px;
+      }
+    }
+
+    .collapse-panel {
+      // padding: 5px 19px 27px;
+      // margin-top: 39px;
+      padding: 30px 20px;
+      margin: 0;
+      min-width: 72%;
+      .collapse-body {
+        button {
+          margin-top: 10px;
+        }
+      }
+      &:nth-child(3) {
+        border-bottom: none;
+      }
+    }
+
+    .collapse-panel.collapse-expanded > .collapse-body {
+      margin-left: 37px;
+    }
+  }
+
+  .ui.button.btn-green {
+    margin-top: 20px;
+  }
+
+  .suggestion-logo-wrapper {
+    width: 500px;
+    max-width: 100%;
+  }
+
+  .quicksetup-footer {
+    border-top: 1px solid #eee7e7;
+  }
+}
+
+@media (max-width: 775px)  {
+  .install {
+    .install-title-wrapper {
+      flex-direction: column;
+      .install-title {
+        font-size: 20px;
+        font-weight: 600;
+      }
+      p {
+        margin-top: 10px;
+        font-size: 14px !important;
+      }
+    }
+    .collapse {
+      align-items: initial;
+    }
+    .collapse-panel.collapse-expanded:nth-child(1) {
+      flex-direction: column;
+    }
+    .collapse-panel {
+      .collapse-body {
+        padding-left: 0px;
+      }
+      .javascript-toggle {
+        .javascript-toggle-desc-wrapper {
+          h3 {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+    .quicksetup-footer {
+      padding: 16px 20px;
+      button {
+        margin-right: 0px !important;
+      }
+    }
+  }
+}
+@include respond-to(md) {
+  .install {
+    .collapse {
+      .collapse-panel {
+        min-width: 100%;
+      }
+    }
+    .quicksetup-footer {
+      button {
+        margin-right: 0px !important;
+      }
+    }
+  }
+}

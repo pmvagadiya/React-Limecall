@@ -1,0 +1,348 @@
+.meet {
+  &-container {
+    width: calc(100% - 1000px);
+    margin: auto;
+    padding-top: 80px;
+
+    .ui.secondary.menu {
+      display: flex;
+      justify-content: center;
+      margin: 20px 0;
+
+      .active.item {
+        border: 2px solid #286efa;
+        background: none;
+      }
+
+      .item {
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 15px;
+        width: 15%;
+
+        text-align: center;
+
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 25px;
+
+        &:hover {
+          background: none;
+          border: 2px solid #286efa;
+        }
+
+        .icon {
+          margin: 0;
+          margin-bottom: 10px;
+          width: 100%;
+
+          font-size: 20px;
+          color: #286efa;
+        }
+      }
+    }
+
+    .ui.tab.active {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+      height: 100%;
+
+      text-align: center;
+
+      background: #f3f4f4;
+      border: 0;
+    }
+  }
+
+  &-holder-item {
+    margin: 30px 0;
+    width: 100%;
+
+    .ui.button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+
+      background: transparent;
+
+      img {
+        margin-right: 5px;
+      }
+    }
+
+    .callerID-title {
+      margin: auto;
+      margin-top: 0 !important;
+      width: 48% !important;
+
+      font-weight: 400 !important;
+      text-align: left !important;
+    }
+
+    .meet-tab {
+      display: flex;
+      justify-content: center;
+      margin: auto;
+      width: 50%;
+
+      .callerID-meets-wrapper {
+        .react-tel-input {
+          margin: auto;
+          width: 100%;
+
+          input {
+            width: 100%;
+          }
+        }
+
+        p {
+          display: none;
+        }
+      }
+
+      &:nth-of-type(1) {
+        .callerID-meets-wrapper {
+          p {
+            display: block;
+          }
+        }
+      }
+
+      .callerID-settings-wrapper {
+        width: 100%;
+
+        .PhoneInput {
+          margin: 0;
+          width: 100%;
+          max-width: 100% !important;
+        }
+      }
+    }
+
+    .btn-delete {
+      padding: 0;
+      margin: 0;
+      margin-right: -20px !important;
+    }
+  }
+
+  &-conference-holder {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    margin: auto;
+    width: 80%;
+  }
+
+  &-conference-item {
+    width: 50%;
+
+    p {
+      margin: auto;
+      width: 80%;
+
+      font-weight: 300;
+    }
+  }
+
+  &-time-holder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 49%;
+  }
+
+  &-time-title {
+    p {
+      text-align: left;
+    }
+  }
+
+  &-time {
+    width: 49%;
+
+    .ui.selection.dropdown {
+      padding: 10px;
+      width: 100%;
+
+      background: #fff;
+      border: 1px solid rgba(34,36,38,.15);
+    }
+
+    .meet-dropdown-select {
+      position: relative;
+
+      select {
+        flex: 1 0 auto;
+        padding: .67857143em 1em;
+        margin: 0;
+        width: 100%;
+        max-width: 100%;
+
+        text-align: left;
+        line-height: 1.21428571em;
+        font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+        color: rgba(0,0,0,.87);
+
+        background: #fff;
+        border: 1px solid rgba(34,36,38,.15);
+        border-radius: .28571429rem;
+        outline: 0;
+        cursor: pointer;
+      }
+
+      .icon {
+        position: absolute;
+        top: 9px;
+        right: 8px;
+      }
+    }
+
+    .inline {
+      width: 100%;
+
+      .ui.input {
+        width: 100%;
+      }
+
+      .ui.icon.input>input {
+        width: 100%;
+      }
+    }
+  }
+
+  &-time-title {
+    margin: 10px 0;
+    width: 100%;
+  }
+
+  &-name {
+    margin: 10px 0;
+    width: 100%;
+
+    .ui.input {
+      width: 100%;
+    }
+  }
+
+  &-btn {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+
+    .btn-save {
+      padding: 10px;
+
+      color: $white;
+
+      background-color: $link-color;
+      border: 1px solid $link-color;
+      border-radius: 0;
+
+      transition: all .3s ease-in-out;
+
+      @include on-event {
+        color: $white;
+
+        background: $btn-blue-hover;
+        border: 1px solid $btn-blue-hover;
+
+        cursor: pointer;
+        transition: all .2s ease-in-out;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  .meet-container {
+    width: calc(100% - 350px);
+    padding-left: 65px;
+  }
+}
+
+@include respond-to (lg-down) {
+  .meet-container {
+    width: calc(100% - 130px);
+    padding-left: 65px;
+  }
+}
+
+@include respond-to (md-down) {
+  .meet-container {
+    width: calc(100% - 65px);
+    padding-left: 65px;
+
+    .ui.secondary.menu .item {
+      width: 20%;
+    }
+  }
+}
+
+@include respond-to (sm-down) {
+  .meet-container {
+    padding-left: 45px;
+
+    .ui.secondary.menu .item {
+      width: 48%;
+    }
+
+    .ui.tab.active {
+      height: 100%;
+    }
+
+    .meet-conference-holder {
+      flex-wrap: wrap;
+      width: 100%;
+    }
+
+    .meet-conference-item {
+      width: 100%;
+
+      p {
+        width: 100%;
+      }
+
+      &:first-child {
+        margin-bottom: 20px;
+      }
+    }
+
+    .meet-holder-item {
+      .callerID-settings-wrapper {
+        padding: 10px 0 !important;
+
+        .react-tel-input {
+          width: 100%;
+        }
+
+        .PhoneInput {
+          max-width: 100% !important;
+          width: 100%;
+        }
+      }
+
+      .callerID-title {
+        text-align: center !important;
+      }
+
+      .meet-tab {
+        width: 100%;
+      }
+    }
+
+    .meet-time-holder {
+      width: 100%;
+    }
+  }
+}
+
+@include respond-to(xs) {
+  .meet-container {
+    width: calc(100% - 30px);
+  }
+}
